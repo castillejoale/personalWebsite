@@ -141,9 +141,6 @@ body a:hover{
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 }
-#face:hover{
-  -webkit-filter: blur(2px);
-}
 .banner-info {
   width: 700px;
   margin: 100px auto 0 auto;
@@ -221,20 +218,19 @@ body a:hover{
   letter-spacing: 18px;
 }
 .about p{
-  margin:45px 0 0 0;
+  margin:20px 0 0 0;
   color:#888b90;
-  font-size:18px;
+  font-size:24px;
   font-family: 'Lato', sans-serif;
   line-height:1.8em;
 }
-.about ul{
+ul{
   margin:45px 0 0 0;
 }
-.about ul li{
+ul li{
   list-style-type:none;
   display:inline-block;
-  margin-right:25px;
-  margin-left: 25px;
+  margin:20px;
   width: 100px;
   height: 100px;
 }
@@ -282,7 +278,7 @@ body a:hover{
   letter-spacing: 18px;
 }
 .gallery-grid {
-  padding: 10px;
+  padding: 15px;
   float: left;
   width: 33.3%;
 }
@@ -325,7 +321,6 @@ body a:hover{
 }
 .textbox .description {
   padding: 10px;
-  font-size: 14px !important;
   color: #000000;
   font-weight:300 !important;
   /*margin:6px 0 0 0!important;*/
@@ -513,8 +508,13 @@ textarea {
 /*-- responsive media queries --*/
 @media(min-width:1441px){
   .gallery-section {
-    min-height: 960px;
-    padding: 115px 0 0px 0;
+    padding: 70px 0 0px 0;
+  }
+  .container {
+    width: 1500px;
+  }
+  .textbox .description{
+    font-size: 20px;
   }
 }
 @media(max-width:1440px){
@@ -531,8 +531,7 @@ textarea {
     min-height: 167px;
   }
   .gallery-section {
-    min-height: 960px;
-    padding: 115px 0 0px 0;
+    padding: 70px 0 0px 0;
   }
 }
 @media(max-width:1366px){
@@ -568,6 +567,7 @@ textarea {
     width: 519px;
   }
 }
+index.htmlme
 @media(max-width:1199px){
   a.boxclose {
     right: 160px;
@@ -586,7 +586,6 @@ textarea {
     min-height: 66px;
   }
   .gallery-section {
-    min-height: 960px;
   }
   .process-back {
     min-height: 69px;
@@ -643,10 +642,6 @@ textarea {
   .textbox {
     width: 93.8%;
   }
-  .textbox .description {
-    padding:13px;
-    font-size: 11px;
-  }
   .button {
     padding: 5px;
     width: 40%;
@@ -655,7 +650,15 @@ textarea {
     font-size: 15px;
   }
 }
+@media(max-width:1080px){
+  .textbox .description { 
+    font-size: 14px;
+  }
+}
 @media(max-width:1024px){
+  .textbox.description{
+    font-size: 14px;
+  }
   .about h3 {
     font-size: 32px;
   }  
@@ -698,7 +701,6 @@ textarea {
   }
   .gallery-section {
     padding: 120px 0 0px 0;
-    min-height: 893px;
   }
   .gallery-section h3 {
     font-size: 30px;
@@ -712,7 +714,7 @@ textarea {
   }
   .textbox .description {
     padding: 15px;
-    font-size: 12px !important;
+    font-size: 12px;
   }
   .button {
     padding: 3px;
@@ -747,6 +749,11 @@ textarea {
  .banner-info {
     width: 600px;
     margin: 100px auto 0 auto;
+  }
+}
+@media(max-width:900px){
+  .textbox .description { 
+    font-size: 12px;
   }
 }
 @media(max-width:768px){
@@ -821,9 +828,6 @@ textarea {
   }
   #portfolio p {
     font-size: 14px;
-  }
-  .gallery-section {
-    min-height: 893px;
   }
   .textbox .description{
     padding: 3px 7px 7px 7px;
@@ -920,9 +924,6 @@ textarea {
   .my-skill-back {
     min-height: 35px;
   }
-  .gallery-section {
-    min-height: 805px;
-  }
   .contact-right input[type="text"] {
     width: 100%;
     padding: 6px 10px;
@@ -990,8 +991,6 @@ textarea {
     margin: 22px 0 0 0;
     font-size: 13px;
   }
-  .about ul li {
-  }
   .banner-right h1 {
     margin: 8px 0 15px 0;
   }
@@ -1023,9 +1022,6 @@ textarea {
   }
   .portfolio-section{
     min-height: 1700px;
-  }
-  .gallery-section {
-    min-height: 1073px;
   }
   .textbox h4 {
     font-size: 16px;
@@ -1102,9 +1098,6 @@ textarea {
   }
   .textbox h4 {
     margin-top: 22px;
-  }
-  .gallery-section {
-    min-height: 904px;
   }
   img.pro-img {
     display: block;
