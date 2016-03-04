@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alejandro Castillejo</title>
+	<!--fonts-->
+		<link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900' rel='stylesheet' type='text/css'>
+	<!--/fonts-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Front-end developer Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- /mobile -->
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>		
+	<!-- /js -->
+</head>
+<body>
+<!-- banner -->
+<div class="banner" id="home">
+	<div class="container">
+<!-- 		<div class="top-header row">
+			<script src="js/classie.js"></script>
+			<div class="top-nav">
+				<div class="nav-icon">
+					    <a href="#" class="right_bt" id="activator"><span> </span> </a>
+				</div>
+				<div class="box" id="box">
+					<div class="box_content">        					                         
+						<div class="box_content_center">
+							<div class="form_content">
+								<div class="menu_box_list">
+									<ul>
+										<li><a class="scroll" href="#home"><span>home</span></a></li>
+										<li><a class="scroll" href="#about"><span>about</span></a></li>									
+										<li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
+										<li><a class="scroll" href="#contact"><span>contact</span></a></li>
+									</ul>
+								</div>
+							</div>                                  
+						</div> 	
+					</div> 
+				</div>       	  
+			</div> -->
+			<!---start-click-drop-down-menu-->
+			        <!--start-dropdown-->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('.box').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("slow");
+									return false; //Prevent the browser jump to the link anchor
+							});				
+						});
+					</script>
+			<!---//End-click-drop-down-menu-->
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-info">
+			<div class="banner-left">
+				<img src="images/face.jpg" alt="" id="face"/>
+			</div>
+			<div class="banner-right">
+				<div>
+					<h1>ALEJANDRO</h1>
+				</div>
+				<div class="border"></div>
+				<div>
+					<h2>Senior at UC Berkeley studying <br> Industrial Engineering and Operations Research</h2>
+				</div>
+				<div id="chatbtn"><a href="mailto:castillejo.alejandro@gmail.com">
+					LET'S CHAT</a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--/header-banner-->
+<!--about-->
+<div class="about text-center" id="about">
+	<div class="container">
+		<div class= "sectiontitle text-center" id="abouttitle">
+			<div class="head">ABOUT ME</div>
+		</div>
+		<div class="strip text-center">
+			<img src="images/about.png" class="strip-image" alt=" "/>
+		</div>
+		<p>
+<!-- 			Hi there! I'm Alejandro, a senior at Cal studying Industrial Engineering and Operations Research. -->
+		</p>
+		<ul>
+			<li>
+				<!-- <a class="fb" href="https://www.facebook.com/castillejo.alejandro"></a> -->
+					<img src="images/fb-light.png" class="social-media-image" id="fb" alt="Image not available"/>
+				
+			</li>
+			<li>
+				<a class="gh" href="https://github.com/castillejoale">
+					<img src="images/gh-light.png" class="social-media-image" id="gh"/>
+				</a>
+			</li>
+			<li>
+				<a class="in" href="http://linkedin.com/in/castillejoalejandro">
+					<img src="images/in-light.png" class="social-media-image" id="in"/>
+				</a>
+			</li>
+			<li>
+				<a class="em" href="mailto:castillejo.alejandro@gmail.com">
+					<img src="images/em-light.png" class="social-media-image" id="em"/>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--//about-->
+<!--portfolio-->
+<div class="portfolio-section">
+	<div class="gallery-section" id="portfolio">
+		<div class="container">
+			<div class= "sectiontitle">
+				<div class="head">PORTFOLIO</div>
+			</div>
+			<div class="strip text-center">
+				<img src="images/port.png" class="strip-image" alt=" "/>
+			</div>
+			<div class="gallery-grids">
+				<div class="top-gallery">
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview"><img src="images/project6.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>ALIVIARA SMART GLOVE</h4>
+								<div class="description">
+									In 48 hours we built a smart glove, app, and server prototype that help patients with Rheumatoid Arthritis conduct rehabilitation exercises based on collected data. It is Bekeley's Hack For Humanity 2016 first prize.
+								</div>
+								<div class="button">
+									<a href="https://docs.google.com/presentation/d/1MyB0A3yDUM2COJymWf7WJjGZthVq2QkIO_HR8Rqxk1k/edit?usp=sharing">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/project5.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>NEW TEXTBOOK CONCEPT</h4>
+								<div class="description">
+									Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia like platform for textbooks that would reduce the cost of textbooks to zero.
+								</div>
+								<div class="button">
+									<a href="https://docs.google.com/presentation/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/project4.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>ZUMY RESCUE ROBOTS</h4>
+								<div class="description">
+									We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe, check for survivors, and if found signal another Zumy to arrive.
+								</div>
+								<div class="button">
+									<a href="https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview"><img src="images/project3.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>PIO SMART RECORDER</h4>
+								<div class="description">
+									We built Pio to help people record audio, mark important moments and export them, all in a simple interface. I was in charge of the iOS development.
+								</div>
+								<div class="button">
+									<a href="http://propelland.com/pio-smart-audio-recorder-app/">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/project2.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>PROPELLAND TIME!</h4>
+								<div class="description">
+									We made an iOS app connected to an RFDuino that moved the propellers of a clock by blowing into the microphone of the phone.
+								</div>
+								<div class="button">
+									<a href="http://www.danielfacio.com/propelland-time.html">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid gallery1">
+						<div class="preview">
+							<img src="images/project1.png" class="port_img img-responsive" alt="/">
+							<div class="textbox">
+								<h4>INFINITE MIRROR</h4>
+								<div class="description">
+									Infinite mirror made with an Arduino, a full mirror, a half mirror, a 3D printed case, and a LED strip.
+								</div>
+								<div class="button">
+									<a href="https://www.instagram.com/p/4AxpG8tjr_/">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="button text-center" id="more-projects">
+				<a href="http://linkedin.com/in/castillejoalejandro">MORE</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//portfolio-->
+<!--contact-->
+<!-- <div class="contact" id="contact">
+	<div class="container">
+		<div class="contact-info text-center">
+			<div class= "sectiontitle">
+				<div class="head" id="contact-head">CONTACT</div>
+			</div>
+			<div class="strip text-center">
+				<img src="images/skill.png" class="strip-image" alt=" "/>
+			</div>
+		</div>
+		<div class="contactcontainer">
+			<div class="col-md-5 infocontainer">
+				<div class="contactheader">GET IN TOUCH</div>
+				<script language="javascript">var sa_email_id = '66020-1b713';var sa_sent_text = 'Thank you for contacting me! I\'ll get back to you in less than 24h.';</script>
+					<script language="javascript" src="http://s1.smartaddon.com/sa_htmlform.js"></script>
+					<div id="sa_contactdiv">
+						<form name=sa_htmlform class="form" onsubmit="return sa_contactform()">
+							<table>
+								<tr><td>
+									<div class="inputlabel" id="yourname">Name *</div>
+									<input type="text" name="name" required="true" class="input-field" id="input-name"/>
+								</td></tr>
+								<tr><td>
+									<div class="inputlabel" id="youremail">Email *</div>
+									<input type="text" name="email" required="true" class="input-field" id="input-email"/>
+								</td></tr>
+								<tr><td>
+									<div class="inputlabel" id="yoursubject">Subject *</div>
+									<input type="text" name="subject" class="input-field" id="input-subject"/>
+								</td></tr>
+								<tr><td>
+									<div class="inputlabel" id="yourmessage">Message *</div>
+									<textarea name="message" cols="42" rows="3" required="true" class="input-field" id="input-message"></textarea>
+								</td></tr>
+								<tr><td>
+									<input type="submit" value="SEND" class="input-field" id="input-submit">
+								</td></tr>
+							</table>
+						</form>		
+					</div>
+				</div>
+			<div class="col-md-7 mapcontainer">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.508869071786!2d-122.26066029035253!3d37.871780625027185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7718c522d7c1%3A0xda8034ea3b6b3289!2sUniversity+of+California%2C+Berkeley!5e0!3m2!1sen!2sus!4v1451498043393" width="540" height="479" id ="map" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div id="backtotop"><img src="images/uparrow.png" id="uparrow"/><div>
+		<script type="text/javascript"> // animate scroll to top button
+			$(function() {
+				$('#uparrow').click(function(){
+					$("html, body").animate({ scrollTop: 0}, 500);
+				});												
+			});
+		</script>
+	</div>
+</div> -->
+<!--//contact-->
+</body>
+</html>
