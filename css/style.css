@@ -292,7 +292,7 @@ body a:hover{
   margin: 0 auto;
   display: inline-block;
   width:95%;
-  height:200px;
+  height:95%;
   position:absolute;
   top:10px;
   left:10px;
@@ -306,11 +306,11 @@ body a:hover{
   transform: scale(1);
 }
 .preview{
-  height: 200px;
+/*  height: 200px;*/
   width: 100%;
 }
 .port_img{
-  height: 200px;
+  /*height: 200px;*/
   width: 100%;
 }
 .textbox {
