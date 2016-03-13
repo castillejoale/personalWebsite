@@ -30,6 +30,17 @@ h2 {
   position: relative;
   margin-top: -30px;
 }
+.sectionsubtitle {
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 15px;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 0px;
+}
 .head{
   text-align: center;
   margin-left: 5px; /* Each letter has its own right padding */
@@ -325,9 +336,6 @@ ul li{
   font-weight:300 !important;
   /*margin:6px 0 0 0!important;*/
 }
-.gallery-grids {
-  margin-top: 20px;
-}
 /*.button a:hover{
 color: #000;
 }*/
@@ -511,7 +519,7 @@ textarea {
     padding: 70px 0 0px 0;
   }
   .container {
-    width: 1500px;
+    width: 1441px;
   }
   .textbox .description{
     font-size: 20px;
