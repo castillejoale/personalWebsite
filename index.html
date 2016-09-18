@@ -12,22 +12,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="keywords" content="Front-end developer Web Design" />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script type="application/x-javascript" src="js/hideURLBar.js"></script>
 	<!-- When sharing link info -->
-		<meta property="og:image" content="images/face.jpg" />
+		<meta property="og:image" content="images/face.png" />
 		<meta property="og:description" content="Alejandro Castillejo" />
 		<meta property="og:url"content="" />
 		<meta property="og:title" content="Alejandro Castillejo" />
 	<!-- js -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>	
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-47048730-1', 'alejandrocastillejo.com');
-			ga('send', 'pageview');
-		</script>
+		<script src="js/googleAnalytics.js"></script>
 </head>
 <body>
 <!-- banner -->
@@ -46,7 +39,7 @@
 								<div class="menu_box_list">
 									<ul>
 										<li><a class="scroll" href="#home"><span>home</span></a></li>
-										<li><a class="scroll" href="#about"><span>about</span></a></li>									
+										<li><a class="scroll" href="#about"><span>about</span></a></li>			
 										<li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
 										<li><a class="scroll" href="#contact"><span>contact</span></a></li>
 									</ul>
@@ -57,44 +50,27 @@
 				</div>       	  
 			</div> -->
 			<!---start-click-drop-down-menu-->
-					<!--start-dropdown-->
-					 <script type="text/javascript">
-						var $ = jQuery.noConflict();
-							$(function() {
-								$('#activator').click(function(){
-									$('#box').animate({'top':'0px'},900);
-								});
-								$('.box').click(function(){
-								$('#box').animate({'top':'-1000px'},900);
-								});
-							});
-							$(document).ready(function(){
-							//Hide (Collapse) the toggle containers on load
-							$(".toggle_container").hide(); 
-							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-							$(".trigger").click(function(){
-								$(this).toggleClass("active").next().slideToggle("slow");
-									return false; //Prevent the browser jump to the link anchor
-							});				
-						});
-					</script>
+			<!-- <script src="js/dropdownMenu.js" type="text/javascript"></script> -->
 			<!---//End-click-drop-down-menu-->
 			<div class="clearfix"> </div>
 		</div>
 		<div class="banner-info">
 			<div class="banner-left">
-				<img src="images/face.jpg" alt="" id="face"/>
+				<img src="images/face.png" alt="" id="face"/>
 			</div>
 			<div class="banner-right">
 				<div>
 					<h1>ALEJANDRO</h1>
 				</div>
 				<div class="border"></div>
-				<div>
-					<h2>Senior at UC Berkeley studying <br> Industrial Engineering and Operations Research</h2>
+				<div class="subtitle subtitleFirst">
+					UC Berkeley grad
 				</div>
-				<div id="chatbtn"><a href="mailto:castillejo.alejandro@gmail.com">
-					LET'S CHAT</a>
+				<div class="subtitle">
+					Industrial Engineering and Operations Research
+				</div>
+				<div class="button mainButton"><a href="mailto:castillejo.alejandro@gmail.com">
+					Say HOLA!</a>
 				</div>
 			</div>
 			<div class="clearfix"> </div>
@@ -104,11 +80,11 @@
 <!--about-->
 <div class="about text-center" id="about">
 	<div class="container">
-		<div class= "sectiontitle text-center" id="abouttitle">
+		<div class= "sectiontitle text-center">
 			<div class="head">ABOUT ME</div>
 		</div>
 		<p>
-			Hola! I'm Alejandro, I study Industrial Engineering and Operations Research from a multidisciplinary perspective. I focus on solving problems and learning whatever is necessary to achieve my goals. If you have an idea or would like to work together let me know without hesitation!
+			Hola! I'm Alejandro, my medium term dream is to reform / disrupt the public education system. To make this happen I am first building my product development skills specializing in Design Thinking and iOS. Shoot me a message if you would like to build something together.
 		</p>
 	</div>
 </div>
@@ -120,32 +96,45 @@
 				<div class="head">PORTFOLIO</div>
 			</div>
 			<div class= "sectionsubtitle">
-				<div class="head">COMPLETED</div>
+				<div class="head">iOS DEVELOPMENT</div>
 			</div>
 			<div class="gallery-grids">
 				<div class="top-gallery">
 					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="easyDoesIt">
+						<div class="container-image" id="iXJournal">
 							<div class="textbox">
-								<h4>EASY DOES IT APP</h4>
+								<h4>iX Journal</h4>
 								<div class="description">
-									In 24 hours we designed and prototyped an iOS app that improves communications between users and the non-profit, as well as improving internal communications. We won Bekeley Builds Spring 16 - Easy Does It designathon.
+									This is the second project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.
 								</div>
-								<div class="button">
-									<a target="_blank" href="https://docs.google.com/presentation/d/1YoJWUQPQsoThpYJESuDRL511C2gJsaWl9Ggi8dpC3wk/edit?usp=sharing">VIEW</a>
+								<div class="button projectButton">
+									<a target="_blank" href="https://itunes.apple.com/us/app/ix-journal/id1134250801?mt=8">VIEW</a>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="xamarin">
+						<div class="container-image" id="iXoX">
 							<div class="textbox">
-								<h4>CHURN ANALYSIS</h4>
+								<h4>Tic Tac Toe</h4>
 								<div class="description">
-									A group of 5 future industrial engineers for our senior project we have partnered with Xamarin, a Microsoft acquired company, to forecast user churn rate.
+									This is the first project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.
 								</div>
-								<div class="button">
-									<a target="_blank" href="https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view?usp=sharing">VIEW</a>
+								<div class="button projectButton">
+									<a target="_blank" href="https://itunes.apple.com/us/app/ix-ox/id1125351984?mt=8">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="container-image" id="easyDoesIt">
+							<div class="textbox">
+								<h4>EASY DOES IT</h4>
+								<div class="description">
+									In 24 hours we designed and prototyped an iOS app that improves communications between users and the non-profit, as well as improving internal communications. We won Bekeley Builds Spring 16 - Easy Does It designathon.
+								</div>
+								<div class="button projectButton">
+									<a target="_blank" href="https://docs.google.com/presentation/d/1YoJWUQPQsoThpYJESuDRL511C2gJsaWl9Ggi8dpC3wk/edit?usp=sharing">VIEW</a>
 								</div>
 							</div>
 						</div>
@@ -157,7 +146,7 @@
 								<div class="description">
 									At the Berkeley Virtual Reality Club we are making textbooks more interactive by making conventional 2D figures come to life in 3D through Google Cardboard.
 								</div>
-								<div class="button">
+								<div class="button projectButton">
 									<a target="_blank" href="https://www.youtube.com/watch?v=EcAYZpuYi3w">VIEW</a>
 								</div>
 							</div>
@@ -170,34 +159,8 @@
 								<div class="description">
 									In 48 hours we built a smart glove, app, and server prototype that help patients with Rheumatoid Arthritis conduct rehabilitation exercises based on collected data. We won Bekeley's Hack For Humanity 2016.
 								</div>
-								<div class="button">
+								<div class="button projectButton">
 									<a target="_blank" href="https://docs.google.com/presentation/d/1MyB0A3yDUM2COJymWf7WJjGZthVq2QkIO_HR8Rqxk1k/edit?usp=sharing">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="ka">
-							<div class="textbox">
-								<h4>NEW TEXTBOOK CONCEPT</h4>
-								<div class="description">
-									Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia like platform for textbooks that would reduce the cost of textbooks to zero.
-								</div>
-								<div class="button">
-									<a target="_blank" href="https://docs.google.com/presentation/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="zumy">
-							<div class="textbox">
-								<h4>ZUMY RESCUE ROBOTS</h4>
-								<div class="description">
-									We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe, check for survivors, and if found signal another Zumy to arrive.
-								</div>
-								<div class="button">
-									<a target="_blank" href="https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be">VIEW</a>
 								</div>
 							</div>
 						</div>
@@ -209,7 +172,7 @@
 								<div class="description">
 									We built Pio to help people record audio, mark important moments and export them, all in a simple interface. I was in charge of the iOS development.
 								</div>
-								<div class="button">
+								<div class="button projectButton">
 									<a target="_blank" href="http://propelland.com/pio-smart-audio-recorder-app/">VIEW</a>
 								</div>
 							</div>
@@ -222,8 +185,55 @@
 								<div class="description">
 									Daniel Facio and I made an iOS app connected to an RFDuino that moved the propellers of a clock by blowing into the microphone of the phone.
 								</div>
-								<div class="button">
+								<div class="button projectButton">
 									<a target="_blank" href="http://www.danielfacio.com/propelland-time.html">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class= "sectionsubtitle">
+				<div class="head">OTHER PROJECTS</div>
+			</div>
+			<div class="gallery-grids">
+				<div class="top-gallery">
+					<div class="col-md-4 gallery-grid">
+						<div class="container-image" id="xamarin">
+							<div class="textbox">
+								<h4>CHURN ANALYSIS</h4>
+								<div class="description">
+									A group of 5 future industrial engineers for our senior project we have partnered with Xamarin, a Microsoft acquired company, to forecast user churn rate.
+								</div>
+								<div class="button projectButton">
+									<a target="_blank" href="https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view?usp=sharing">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="container-image" id="ka">
+							<div class="textbox">
+								<h4>NEW TEXTBOOK CONCEPT</h4>
+								<div class="description">
+									Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia like platform for textbooks that would reduce the cost of textbooks to zero.
+								</div>
+								<div class="button projectButton">
+									<a target="_blank" href="https://docs.google.com/presentation/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing">VIEW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="container-image" id="zumy">
+							<div class="textbox">
+								<h4>ZUMY RESCUE ROBOTS</h4>
+								<div class="description">
+									We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe, check for survivors, and if found signal another Zumy to arrive.
+								</div>
+								<div class="button projectButton">
+									<a target="_blank" href="https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be">VIEW</a>
 								</div>
 							</div>
 						</div>
@@ -235,7 +245,7 @@
 								<div class="description">
 									Infinite mirror made with an Arduino, a full mirror, a half mirror, a 3D printed case, and a LED strip.
 								</div>
-								<div class="button">
+								<div class="button projectButton">
 									<a target="_blank" href="https://www.instagram.com/p/4AxpG8tjr_/">VIEW</a>
 								</div>
 							</div>
@@ -256,7 +266,7 @@
 								<div class="description">
 									Along with professor Aswani and Mo Zhou, a phd student, we are working on an app that recommends workouts using machine learning algorithms.
 								</div>
-								<!-- <div class="button">
+								<!-- <div class="button projectButton">
 									<a target="_blank" href="https://www.instagram.com/p/4AxpG8tjr_/">VIEW</a>
 								</div> -->
 							</div>
@@ -352,123 +362,7 @@
 		</script>
 	</div>
 </div> -->
-<script>
-	$(document).ready(function() {     
-		$('#easyDoesIt').hover(function(){     
-			$('#easyDoesIt .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#easyDoesIt .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	});
-	$(document).ready(function() {     
-		$('#ARTextbooks').hover(function(){     
-			$('#ARTextbooks .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#ARTextbooks .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-	$(document).ready(function() {     
-		$('#aliviara').hover(function(){     
-			$('#aliviara .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#aliviara .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-	$(document).ready(function() {     
-		$('#calFit').hover(function(){     
-			$('#calFit .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#calFit .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-	$(document).ready(function() {     
-		$('#clock').hover(function(){     
-			$('#clock .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#clock .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-	$(document).ready(function() {     
-		$('#infiniteMirror').hover(function(){     
-			$('#infiniteMirror .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#infiniteMirror .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	});
-	$(document).ready(function() {     
-		$('#ka').hover(function(){     
-			$('#ka .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#ka .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-	$(document).ready(function() {     
-		$('#pio').hover(function(){     
-			$('#pio .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#pio .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-	$(document).ready(function() {     
-		$('#xamarin').hover(function(){     
-			$('#xamarin .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#xamarin .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-	$(document).ready(function() {     
-		$('#zumy').hover(function(){     
-			$('#zumy .textbox').addClass('appear');
-			console.log ( 'Hover' );    
-		},     
-		function(){    
-			$('#zumy .textbox').removeClass('appear'); 
-			console.log ( 'No Hover' );      
-		});
-	}); 
-</script>
-<script>
-	$(function() {
-			var div = $('.gallery-grid');
-			var width = div.width();
-			div.css('height', 0.5627*width + 20);
-			console.log ( 'Size' );  
-	});
-	window.onresize = function(event) {
-		$(function() {
-			var div = $('.gallery-grid');
-			var width = div.width();
-			div.css('height', 0.5627*width + 20);
-			console.log ( 'Size' );  
-		});
-	};
-</script>
+<script src="js/hover.js"></script>
+<script src="js/galleryGridSize.js"></script>
 </body>
 </html>
