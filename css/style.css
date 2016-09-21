@@ -35,6 +35,11 @@
 #zumy {
 	background-image: url(../images/projects/project-zumy.png);
 }
+/*Working on*/
+.gallery-grid {
+	min-height: 400px;
+	max-height: 400px;
+}
 /*Need to be on top*/
 .textbox {
 	display: none;
@@ -1021,9 +1026,6 @@ ul li {
 		padding: 5px;
 		width: 46%;
 		margin: 5px auto 0 auto;
-	}
-	.col-md-4.sample-page-right {
-		padding: 0;
 	}
 	.col-md-7.contact-right {
 		margin-top: 30px;
