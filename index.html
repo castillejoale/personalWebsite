@@ -1,368 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alejandro Castillejo</title>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<!--fonts-->
-	<link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900' rel='stylesheet' type='text/css'>
-	<!-- mobile -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Front-end developer Web Design" />
-	<!-- When sharing link info -->
-	<meta property="og:image" content="images/face.png" />
-	<meta property="og:description" content="Alejandro Castillejo" />
-	<meta property="og:url"content="" />
-	<meta property="og:title" content="Alejandro Castillejo" />
-	<!-- js -->
-	<script type="application/x-javascript" src="js/hideURLBar.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>	
-	<script src="js/googleAnalytics.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono|Russo+One|Gloria+Hallelujah|Quicksand" rel="stylesheet">
 </head>
 <body>
-<!-- banner -->
-<div class="banner" id="home">
-	<div class="container">
-<!-- 		<div class="top-header row">
-			<script src="js/classie.js"></script>
-			<div class="top-nav">
-				<div class="nav-icon">
-						<a href="#" class="right_bt" id="activator"><span> </span> </a>
-				</div>
-				<div class="box" id="box">
-					<div class="box_content">        					                         
-						<div class="box_content_center">
-							<div class="form_content">
-								<div class="menu_box_list">
-									<ul>
-										<li><a class="scroll" href="#home"><span>home</span></a></li>
-										<li><a class="scroll" href="#about"><span>about</span></a></li>			
-										<li><a class="scroll" href="#portfolio"><span>portfolio</span></a></li>
-										<li><a class="scroll" href="#contact"><span>contact</span></a></li>
-									</ul>
-								</div>
-							</div>                                  
-						</div> 	
-					</div> 
-				</div>       	  
-			</div> -->
-			<!---start-click-drop-down-menu-->
-			<!-- <script src="js/dropdownMenu.js" type="text/javascript"></script> -->
-			<!---//End-click-drop-down-menu-->
-			<div class="clearfix"> </div>
+<!-- 	<div class="dev-overlay">
+        <div class="center-text">
+        	<br>Under development
+        </div>
+    </div> -->
+	<div class="section" id="section0">
+		<div class="sectionHalf">
+			<img src="images/face.png" alt="" id="face"/>
 		</div>
-		<div class="banner-info">
-			<div class="banner-left">
-				<img src="images/face.png" alt="" id="face"/>
-			</div>
-			<div class="banner-right">
-				<div>
-					<h1>ALEJANDRO</h1>
+		<div class="sectionHalf sectionHalfRight">
+			<div class="infoBox">
+				<div class="infoBoxElement" id="infoBoxElement-name">
+					ALEJANDRO
 				</div>
-				<div class="border"></div>
-				<div class="subtitle subtitleFirst">
-					UC Berkeley grad
-				</div>
-				<div class="subtitle">
-					Industrial Engineering and Operations Research
-				</div>
-				<div class="button mainButton"><a href="mailto:castillejo.alejandro@gmail.com">
-					Say HOLA!</a>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--about-->
-<div class="about text-center" id="about">
-	<div class="container">
-		<div class= "sectiontitle text-center">
-			<div class="head">ABOUT ME</div>
-		</div>
-		<p>
-			Hola! I'm Alejandro, my medium term dream is to reform / disrupt the public education system. To make this happen I am first building my product development skills specializing in Design Thinking and iOS. Shoot me a message if you would like to build something together.
-		</p>
-	</div>
-</div>
-<!--portfolio-->
-<div class="portfolio-section">
-	<div class="gallery-section" id="portfolio">
-		<div class="container">
-			<div class= "sectiontitle">
-				<div class="head">PORTFOLIO</div>
-			</div>
-			<div class= "sectionsubtitle">
-				<div class="head">iOS DEVELOPMENT</div>
-			</div>
-			<div class="gallery-grids">
-				<div class="top-gallery">
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="iXJournal">
-							<div class="textbox">
-								<h4>iX Journal</h4>
-								<div class="description">
-									This is the second project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://itunes.apple.com/us/app/ix-journal/id1134250801?mt=8">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="iXoX">
-							<div class="textbox">
-								<h4>Tic Tac Toe</h4>
-								<div class="description">
-									This is the first project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://itunes.apple.com/us/app/ix-ox/id1125351984?mt=8">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="easyDoesIt">
-							<div class="textbox">
-								<h4>EASY DOES IT</h4>
-								<div class="description">
-									In 24 hours we designed and prototyped an iOS app that improves communications between users and the non-profit, as well as improving internal communications. We won Bekeley Builds Spring 16 - Easy Does It designathon.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://docs.google.com/presentation/d/1YoJWUQPQsoThpYJESuDRL511C2gJsaWl9Ggi8dpC3wk/edit?usp=sharing">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="ARTextbooks">
-							<div class="textbox">
-								<h4>Augmented Reality Textbooks</h4>
-								<div class="description">
-									At the Berkeley Virtual Reality Club we are making textbooks more interactive by making conventional 2D figures come to life in 3D through Google Cardboard.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://www.youtube.com/watch?v=EcAYZpuYi3w">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="aliviara">
-							<div class="textbox">
-								<h4>ALIVIARA SMART GLOVE</h4>
-								<div class="description">
-									In 48 hours we built a smart glove, app, and server prototype that help patients with Rheumatoid Arthritis conduct rehabilitation exercises based on collected data. We won Bekeley's Hack For Humanity 2016.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://docs.google.com/presentation/d/1MyB0A3yDUM2COJymWf7WJjGZthVq2QkIO_HR8Rqxk1k/edit?usp=sharing">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="pio">
-							<div class="textbox">
-								<h4>PIO SMART RECORDER</h4>
-								<div class="description">
-									We built Pio to help people record audio, mark important moments and export them, all in a simple interface. I was in charge of the iOS development.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="http://propelland.com/pio-smart-audio-recorder-app/">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="clock">
-							<div class="textbox">
-								<h4>PROPELLAND TIME!</h4>
-								<div class="description">
-									Daniel Facio and I made an iOS app connected to an RFDuino that moved the propellers of a clock by blowing into the microphone of the phone.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="http://www.danielfacio.com/propelland-time.html">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class= "sectionsubtitle">
-				<div class="head">OTHER PROJECTS</div>
-			</div>
-			<div class="gallery-grids">
-				<div class="top-gallery">
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="xamarin">
-							<div class="textbox">
-								<h4>CHURN ANALYSIS</h4>
-								<div class="description">
-									A group of 5 future industrial engineers for our senior project we have partnered with Xamarin, a Microsoft acquired company, to forecast user churn rate.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view?usp=sharing">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="ka">
-							<div class="textbox">
-								<h4>NEW TEXTBOOK CONCEPT</h4>
-								<div class="description">
-									Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia like platform for textbooks that would reduce the cost of textbooks to zero.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://docs.google.com/presentation/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="zumy">
-							<div class="textbox">
-								<h4>ZUMY RESCUE ROBOTS</h4>
-								<div class="description">
-									We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe, check for survivors, and if found signal another Zumy to arrive.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="infiniteMirror">
-							<div class="textbox">
-								<h4>INFINITE MIRROR</h4>
-								<div class="description">
-									Infinite mirror made with an Arduino, a full mirror, a half mirror, a 3D printed case, and a LED strip.
-								</div>
-								<div class="button projectButton">
-									<a target="_blank" href="https://www.instagram.com/p/4AxpG8tjr_/">VIEW</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-			<div class= "sectionsubtitle">
-				<div class="head">IN PROCESS</div>
-			</div>
-			<div class="gallery-grids">
-				<div class="top-gallery">
-					<div class="col-md-4 gallery-grid">
-						<div class="container-image" id="calFit">
-							<div class="textbox">
-								<h4>Fitness recommendation app</h4>
-								<div class="description">
-									Along with professor Aswani and Mo Zhou, a phd student, we are working on an app that recommends workouts using machine learning algorithms.
-								</div>
-								<!-- <div class="button projectButton">
-									<a target="_blank" href="https://www.instagram.com/p/4AxpG8tjr_/">VIEW</a>
-								</div> -->
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
+<!-- 				<div class="infoBoxElement" id="infoBoxElement-motto">
+					DREAM MAKER
+				</div> -->
 			</div>
 		</div>
 	</div>
-	<div>
-		<ul>
-			<li>
-				<a target="_blank" class="fb" href="https://www.facebook.com/castillejo.alejandro">
-					<img src="images/socialMedia/fb-light.png" class="social-media-image" id="fb" alt="Image not available"/>
-				</a>	
-			</li>
-			<li>
-				<a target="_blank" class="gh" href="https://github.com/castillejoale">
-					<img src="images/socialMedia/gh-light.png" class="social-media-image" id="gh" alt="Image not available"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" class="in" href="http://linkedin.com/in/castillejoalejandro">
-					<img src="images/socialMedia/in-light.png" class="social-media-image" id="in" alt="Image not available"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" class="em" href="mailto:castillejo.alejandro@gmail.com">
-					<img src="images/socialMedia/em-light.png" class="social-media-image" id="em" alt="Image not available"/>
-				</a>
-			</li>
-			<li>
-				<a target="_blank" class="em" href="https://drive.google.com/file/d/0B1fLV7zXvJTcTkVTcUozU3UwUDg/view?usp=sharing">
-					<img src="images/socialMedia/cv-light.png" class="social-media-image" id="cv" alt="Image not available"/>
-				</a>
-			</li>
-		</ul>
+	<div class="section" id="section1">
+		<div class= "sectionTitle">
+			ABOUT ME
+		</div>
+		<div class="text-1">
+			Hola! Very nice meeting you, my medium term dream is to <span id='disrupt'>disrupt</span> the public education system. First I am building my product development skills specializing in iOS, rapid prototyping, and Design Thinking.<br><br>
+			Let's grab a coffee and talk about what things we can make together or about <b>anything</b> I could help you with. See you tomorrow.
+		</div>
+		<div class= "sectionTitle" id="section1Title">
+			PROJECTS
+		</div>
+		<div class= "sectionSubTitle" id="section1SubTitle1">
+			iOS
+		</div>
+		<div class="grid app"></div>
+		<div class= "sectionSubTitle" id="section1SubTitle2">
+			OTHER
+		</div>
+		<div class="grid project" id="done"></div>
+<!-- 		<div class= "sectionSubTitle" id="section1SubTitle3">
+			IN PROCESS
+		</div>
+		<div class="grid project" id="inProcess"></div> -->
 	</div>
-</div>
-<!--contact-->
-<!-- <div class="contact" id="contact">
-	<div class="container">
-		<div class="contact-info text-center">
-			<div class= "sectiontitle">
-				<div class="head" id="contact-head">CONTACT</div>
-			</div>
-			<div class="strip text-center">
-				<img src="images/skill.png" class="strip-image" alt=" "/>
-			</div>
+	<div class="section" id="section2">
+		<div class="list" id="listSocialMedia">
+			<a target="_blank" href="https://www.facebook.com/castillejo.alejandro">
+				<div class="listElement listElementSocialMedia fb" id=""></div>
+			</a>
+			<a target="_blank" href="https://github.com/castillejoale" class="ha">
+				<div class="listElement listElementSocialMedia gh" id=""></div>
+			</a>
+			<a target="_blank" href="http://linkedin.com/in/castillejoalejandro">
+				<div class="listElement listElementSocialMedia in" id=""></div>
+			</a>
+			<a target="_blank" href="mailto:castillejo.alejandro@gmail.com">
+				<div class="listElement listElementSocialMedia em" id=""></div>
+			</a>
+			<a target="_blank" href="https://drive.google.com/file/d/0B1fLV7zXvJTcTkVTcUozU3UwUDg/view?usp=sharing">
+				<div class="listElement listElementSocialMedia cv" id=""></div>
+			</a>
 		</div>
-		<div class="contactcontainer">
-			<div class="col-md-5 infocontainer">
-				<div class="contactheader">GET IN TOUCH</div>
-				<script language="javascript">var sa_email_id = '66020-1b713';var sa_sent_text = 'Thank you for contacting me! I\'ll get back to you in less than 24h.';</script>
-					<script language="javascript" src="http://s1.smartaddon.com/sa_htmlform.js"></script>
-					<div id="sa_contactdiv">
-						<form name=sa_htmlform class="form" onsubmit="return sa_contactform()">
-							<table>
-								<tr><td>
-									<div class="inputlabel" id="yourname">Name *</div>
-									<input type="text" name="name" required="true" class="input-field" id="input-name"/>
-								</td></tr>
-								<tr><td>
-									<div class="inputlabel" id="youremail">Email *</div>
-									<input type="text" name="email" required="true" class="input-field" id="input-email"/>
-								</td></tr>
-								<tr><td>
-									<div class="inputlabel" id="yoursubject">Subject *</div>
-									<input type="text" name="subject" class="input-field" id="input-subject"/>
-								</td></tr>
-								<tr><td>
-									<div class="inputlabel" id="yourmessage">Message *</div>
-									<textarea name="message" cols="42" rows="3" required="true" class="input-field" id="input-message"></textarea>
-								</td></tr>
-								<tr><td>
-									<input type="submit" value="SEND" class="input-field" id="input-submit">
-								</td></tr>
-							</table>
-						</form>		
-					</div>
-				</div>
-		</div>
-		<div id="backtotop">
-			<img src="images/uparrow.png" id="uparrow"/>
-		<div>
-		<script type="text/javascript"> // animate scroll to top button
-			$(function() {
-				$('#uparrow').click(function(){
-					$("html, body").animate({ scrollTop: 0}, 500);
-				});												
-			});
-		</script>
+	</div>
+</body>
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="projectInfo.js"></script>
+<script src="responsive.js"></script>
+<script src="logos.js"></script>
+<script src="video.js"></script>
+<script src="debugging.js"></script>
+
+<!-- <div class="cell" id="">
+	<div class="cellContent cellContentApp">
+		<video loop preload="none">
+			<source src="" type="video/mp4">Your browser does not support the video tag.</source>
+		</video>
+	</div>
+	<div class="cellView">
+		<div class="projectTitle"></div>
+		<div class="projectTitle"></div>
 	</div>
 </div> -->
-<script src="js/hover.js"></script>
-<script src="js/galleryGridSize.js"></script>
-</body>
-</html>

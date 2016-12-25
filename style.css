@@ -1,0 +1,314 @@
+/*Default classes*/
+a {
+	/*Take out weird black little line*/
+	text-decoration: none;
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+	margin:0px;
+	padding: 5%;
+}
+video {
+  	width: 100%;
+  	height: auto;
+  	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
+/*Custom classes*/
+.dev-overlay {
+  opacity:    0.95; 
+  background: #FFF; 
+  width:      100%;
+  height:     100%; 
+  z-index:    10000;
+  top:        0; 
+  left:       0; 
+  position:   fixed;
+  text-align: center;
+  padding: 20vh 0 0 0;
+}
+.cell {
+	display: inline-block;
+	margin:0px;
+	padding: 0px;
+	/*Delete whitespace between divs*/
+	clear:none;
+	float:left;
+}
+.cellContent {
+	/*Setting height in javascript*/
+	width: 80%;
+	display: block;
+	background-repeat:no-repeat;
+   	background-size:cover;
+   	box-shadow: 4px 4px 10px #EEEEEE;
+   	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.cellContentApp {
+	margin-top: 10%;
+	margin-right: 10%;
+/*	margin-bottom: 5px;*/
+	margin-left: 10%;
+}
+.cellContentProject {
+	margin-top: 10%;
+	margin-right: 10%;
+	margin-bottom: 5px;
+	margin-left: 10%;
+}
+.cellView {
+	height: 66px;
+	/*If the light height is the same as the height, it centers vertically*/
+	/*line-height: 50px;*/
+	width: 100%;
+	/*margin-right: auto;*/
+	margin-bottom: 10px;
+	margin-top: 20px;
+	/*margin-left: auto;*/
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+.dynamic {
+	background-color: rgba(255,255,255,0.9);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.dynamic-text {
+	text-align: center;
+	vertical-align: middle;
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+	position: absolute;
+   	top: 50%;
+   	transform: translate(0, -50%);
+   	overflow:auto;
+   	color: #333333;
+   	font-family: 'Raleway', sans-serif;
+}
+.dynamic-textContainer {
+	height: 85%;
+	width: 100%;
+	position: relative;
+	overflow-y:auto;
+}
+.dynamic-times {
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	position: absolute;
+   	top: 50%;
+   	transform: translate(0, -50%);
+   	color: #333333;
+   	font-family: 'Raleway', sans-serif;
+   	font-weight: bold;
+}
+.dynamic-timesContainer {
+	height: 15%;
+	width: 100%;
+	position: relative;
+}
+.grid {
+	box-sizing:border-box;
+	display: inline-block;
+	height: 100%;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.infoBox {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10%;
+	/*margin-right: 5px;*/
+	float: left;
+}
+.infoBoxElement {
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+.listElement {
+	display: inline-block;
+	background-repeat:no-repeat;
+   	background-size:cover;
+}
+.listElementProject {
+	width: 25px;
+	height: 25px;
+	margin: 4px;
+}
+.listElementSocialMedia {
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+}
+.projectTitle {
+	width: 100%;
+	height: 50%;
+}
+.sectionHalf {
+	height: 100%;
+	width: 50%;
+	margin: 0px;
+	display: inline-block;
+	/*Delete whitespace between divs*/
+	clear:none;
+	float:left;
+	text-align: center;
+}
+.sectionHalfLeft{
+	/*float:right;*/
+}
+.sectionHalfRight{
+	display: inline-flex; 
+	/*float:left;*/
+}
+.section {
+	display: block;
+	width: 100%;
+}
+.sectionTitle {
+	color: #617a9d;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	/*font-weight: 500;*/
+	/*letter-spacing: 15px;*/
+	text-align: center;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	/*height: 100px;*/
+}
+.sectionSubTitle {
+	color: #000000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+	/*font-weight: 500;*/
+	/*letter-spacing: 3px;*/
+	text-align: center;
+	width: 100%;
+	/*height: 80px;*/
+}
+.socialMediaImage {
+	/*background-image: url(../NewWeb/images/socialMedia/cv-light.png);*/
+	max-width:100%;
+	max-height:100%;
+}
+.text-1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size:20px;
+	text-align: center;
+}
+/*Custom ids*/
+#disrupt{
+	font-family: 'Russo One', sans-serif;
+}
+#face {
+	/*Same radius as the iOS apps*/
+	border-radius: 16%;
+	height:100%;
+	width:auto;
+	float:right;
+	margin-right: 10%;
+}
+#infoBoxElement-name {
+	font-size: 50px;
+	color: rgba(150,150,150,1);
+	font-family: 'Quicksand'
+}
+#infoBoxElement-motto {
+	font-size: 24px;
+	font-family: 'Gloria Hallelujah', cursive;
+	margin-top: 20px;
+}
+#listProject {
+	height: 50%;
+}
+#listSocialMedia {
+	text-align: center;
+}
+#section0 {
+
+}
+#section1 {
+	
+}
+#section2 {
+	
+}
+/*Responsiviness*/
+@media(min-width:1001px) {
+	.cell {
+		width: 33.333%;
+	}
+	.dynamic-textApp {
+		font-size: 2.0vw;
+	}
+	.dynamic-textProject {
+		font-size: 1.3vw;
+	}
+	.dynamic-timesApp {
+		font-size: 2.0vw;
+	}
+	.dynamic-timesProject {
+		font-size: 1.7vw;
+	}
+}
+@media(max-width:1000px) {
+	.cell {
+		width: 50%;
+	}
+	.dynamic-textApp {
+		font-size: 3.0vw;
+	}
+	.dynamic-textProject {
+		font-size: 2.0vw;
+	}
+	.dynamic-timesApp {
+		font-size: 3.2vw;
+	}
+	.dynamic-timesProject {
+		font-size: 2.7vw;
+	}
+}
+@media(max-width:480px) {
+	.cell {
+		width: 100%;
+	}
+	.infoBox {
+		width: 100%;
+		margin-left: 0%;
+	}
+	.sectionHalf {
+		width: 100%;
+	}
+	#face {
+		float:none;
+		margin-right: 0%;
+	}
+	.sectionHalf {
+		height: 50%;
+	}
+	.dynamic-textApp {
+		font-size: 6.0vw;
+	}
+	.dynamic-textProject {
+		font-size: 4.0vw;
+	}
+	.dynamic-timesApp {
+		font-size: 6.2vw;
+	}
+	.dynamic-timesProject {
+		font-size: 5.7vw;
+	}
+}
