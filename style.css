@@ -47,7 +47,7 @@ video::-webkit-media-controls {
 	display: block;
 	background-repeat:no-repeat;
    	background-size:cover;
-   	box-shadow: 4px 4px 10px #EEEEEE;
+   	box-shadow: 0px 0px 20px #CCCCCC;
    	position: relative;
 	top: 0px;
 	left: 0px;

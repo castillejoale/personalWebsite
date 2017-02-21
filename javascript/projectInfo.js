@@ -2,6 +2,30 @@
 
 var projects = [];
 
+var projectIXJournal = {
+  id: "iXJournal",
+  projectSession: "iOS",
+  title: "iX Journal",
+  imageSource: "url(images/apps/iXJournal.png)",
+  projectText: "This is the second project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.",
+  projectTimes: "July '16",
+  videoSource: "",
+  projectLinks: [{link:"https://itunes.apple.com/us/app/ix-journal/id1134250801?mt=8", linktype:"appleStore"}]
+};
+projects.push(projectIXJournal);
+
+var projectTicTacToe = {
+  id: "iXoX",
+  projectSession: "iOS",
+  title: "Tic Tac Toe",
+  imageSource: "url(images/apps/iXoX.png)",
+  projectText: "This is the first project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.",
+  projectTimes: "June '16",
+  videoSource: "",
+  projectLinks: [{link:"https://itunes.apple.com/us/app/ix-ox/id1125351984?mt=8", linktype:"appleStore"}]
+};
+projects.push(projectTicTacToe);
+
 var projectPio = {
   id: "pio",
   projectSession: "iOS",
@@ -10,7 +34,7 @@ var projectPio = {
   projectText: "We built Pio to help people record audio, mark important moments and export them, all in a simple interface. I was in charge of the iOS development.",
   projectTimes: "June '14 - present",
   videoSource: "videos/pio-video.mp4",
-  projectLinks: [{link:"http://propelland.com/pio-smart-audio-recorder-app/", linktype:"web"}]
+  projectLinks: [{link:"http://propelland.com/pio-smart-audio-recorder-app/", linktype:"web"},{link:"http://thenextweb.com/apps/2015/07/20/pio-for-ios-is-the-perfect-audio-recording-app-for-interviews/", linktype:"press"},{link:"https://itunes.apple.com/us/app/pio-smart-recorder/id923119916?ls=1&mt=8", linktype:"appleStore"}]
 };
 projects.push(projectPio);
 
@@ -18,7 +42,7 @@ var projectCalFit = {
   id: "calFit",
   projectSession: "iOS",
   title: "Fitness recommendation app",
-  imageSource: "url(images/apps/appNoImage.png)",
+  imageSource: "url(images/apps/calFitness.png)",
   projectText: "Along with professor Aswani and Mo Zhou, a phd student, we are working on an app that recommends workouts using machine learning algorithms.",
   projectTimes: "February '16 - present",
   videoSource: "",
@@ -30,7 +54,7 @@ var projectEasyDoesIt = {
   id: "easyDoesIt",
   projectSession: "iOS",
   title: "EASY DOES IT",
-  imageSource: "url(images/apps/appNoImage.png)",
+  imageSource: "url(images/apps/easyDoesIt.png)",
   projectText: "In 24 hours we designed and prototyped an iOS app that improves communications between users and the non-profit, as well as improving internal communications. We won Bekeley Builds Spring 16 - Easy Does It designathon.",
   projectTimes: "April '16",
   videoSource: "",
@@ -54,7 +78,7 @@ var projectAliviara = {
   id: "aliviara",
   projectSession: "iOS",
   title: "ALIVIARA SMART GLOVE",
-  imageSource: "url(images/apps/appNoImage.png)",
+  imageSource: "url(images/apps/aliviara.jpeg)",
   projectText: "In 48 hours we built a smart glove, app, and server prototype that help patients with Rheumatoid Arthritis conduct rehabilitation exercises based on collected data. We won Bekeley's Hack For Humanity 2016.",
   projectTimes: "February '16",
   videoSource: "",
@@ -66,49 +90,13 @@ var projectClock = {
   id: "clock",
   projectSession: "iOS",
   title: "PROPELLAND TIME!",
-  imageSource: "url(images/apps/appNoImage.png)",
+  imageSource: "url(images/apps/clock.png)",
   projectText: "Daniel Facio and I made an iOS app connected to an RFDuino that moved the propellers of a clock by blowing into the microphone of the phone.",
   projectTimes: "August '14",
   videoSource: "",
   projectLinks: [{link:"http://www.danielfacio.com/propelland-time.html", linktype:"web"}]
 };
 projects.push(projectClock);
-
-var projectTicTacToe = {
-  id: "iXoX",
-  projectSession: "iOS",
-  title: "Tic Tac Toe",
-  imageSource: "url(images/apps/iXoX.png)",
-  projectText: "This is the first project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.",
-  projectTimes: "June '16",
-  videoSource: "",
-  projectLinks: [{link:"https://itunes.apple.com/us/app/ix-ox/id1125351984?mt=8", linktype:"appleStore"}]
-};
-projects.push(projectTicTacToe);
-
-var projectIXJournal = {
-  id: "iXJournal",
-  projectSession: "iOS",
-  title: "iX Journal",
-  imageSource: "url(images/apps/iXJournal.png)",
-  projectText: "This is the second project app our students developed in the iOS course we taught at iXperience Cape Town, South Africa. Currently in the App Store.",
-  projectTimes: "July '16",
-  videoSource: "",
-  projectLinks: [{link:"https://itunes.apple.com/us/app/ix-journal/id1134250801?mt=8", linktype:"appleStore"}]
-};
-projects.push(projectIXJournal);
-
-var projectWeather = {
-  id: "weather",
-  projectSession: "iOS",
-  title: "Wear based on weather",
-  imageSource: "url(images/apps/weather.png)",
-  projectText: "This is the first app I made in my life",
-  projectTimes: "May '14",
-  videoSource: "",
-  projectLinks: []
-};
-projects.push(projectWeather);
 
 var projectZumy = {
   id: "zumy",
@@ -154,6 +142,18 @@ var projectXamarin = {
   projectLinks: [{link:"https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view", linktype:"pdf"}]
 };
 projects.push(projectXamarin);
+
+var projectWeather = {
+  id: "weather",
+  projectSession: "iOS",
+  title: "Wear based on weather",
+  imageSource: "url(images/apps/weather.png)",
+  projectText: "This is the first app I made in my life",
+  projectTimes: "May '14",
+  videoSource: "",
+  projectLinks: []
+};
+projects.push(projectWeather);
 
 
 for (i = 0; i < projects.length; i++) { 
