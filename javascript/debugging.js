@@ -3,6 +3,7 @@ var debugging = false;
 if (debugging) {
 
 	$("body").css("background", "rgba(40,40,40,1)");
+	$("#navigationBar").css("background", "rgba(250,0,0,1)");
 	$(".section").css("background", "rgba(60,60,60,1)");
 	$(".sectionHalfLeft").css("background", "rgba(80,80,80,1)");
 	$(".sectionHalfRight").css("background", "rgba(90,90,90,1)");

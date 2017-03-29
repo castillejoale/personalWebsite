@@ -1,5 +1,10 @@
 function responsive()
 {
+
+	var screenHeight = $(window).height();
+	//I change from document to window, hopefully there are no issues
+	var screenWidth = $(window).width();
+
 	//Conserve grid cellContent's height-width ratio
 	var cellWidth = $('.cell').width();
 	var cellContentWidth = $('.cellContent').width();
@@ -41,7 +46,6 @@ function responsive()
 	});
 
 	//Conserve grid height based on cells height. Assuming above 1001px screenWidth there will be 3 elements, below, 2 elements.
-	var screenWidth = $(document).width();
 	var divider = 0;
 	var gridPaddingTop = parseInt($('.grid').css('padding-top'));
 	var gridPaddingBottom = parseInt($('.grid').css('padding-bottom'));
@@ -66,18 +70,79 @@ function responsive()
 
 	});
 
-	//Make height of the section header
-	var screenHeight = $(window).height();
 
-	if (screenWidth < 480){
-		$('#section0').css({
-		    'height': 2*(screenHeight/3.0) + 'px'
-		});
+	//Navbar
+	var navigationBarHeight = Math.floor(screenHeight*0.10);
+	var navigationBarElementWidth = screenWidth*0.20;
+
+	$("#navigationBar").css({
+		'height': navigationBarHeight + 'px'
+	});
+	
+	$(".navigationBarElement").css({
+		'height': navigationBarHeight + 'px',
+		'width': navigationBarElementWidth + 'px',
+		'line-height': navigationBarHeight + 'px'
+	});
+
+	//World image
+	var imageHeight = Math.floor(screenHeight*0.33);
+	var imageWidth = screenWidth*0.80;
+	var imageContainerRatio = imageWidth/imageHeight;
+	var imageRatio = 2400 / 804;
+	if (imageContainerRatio > imageRatio) {
+		imageWidth = imageHeight * imageRatio;
 	} else {
-		$('#section0').css({
-		    'height': screenHeight/3.0 + 'px'
-		});
+		imageHeight = imageWidth * 1/imageRatio;
 	}
+
+	//sectionHeaderText
+	var textHeight = screenHeight - imageHeight - navigationBarHeight
+
+
+	$("#headerImageContainer").css({
+		'height': imageHeight + 'px',
+		'width': imageWidth + 'px'
+	});
+
+	$("#headerImage").css({
+		'height': imageHeight + 'px',
+		'width': imageWidth + 'px'
+	});
+
+	$("#sectionHeaderText").css({
+		'height': textHeight + 'px'
+	})
+
+	//Home text
+	var textTopMargin = Math.min(screenHeight * 0.15, screenWidth * 0.15);
+	var textSideMargin = textTopMargin;
+
+	var textHeight = screenHeight - imageHeight - textTopMargin - navigationBarHeight;
+	var textWidth = screenWidth - textSideMargin;
+	var textFontSize = ((textHeight * textWidth) / 17000.0) + 2.7*(1000/textWidth);
+
+	$(".text-1").css({
+		// 'height': textHeight + 'px',
+		'font-size': textFontSize + 'px',
+		// 'margin-top': textTopMargin + 'px',
+		// 'margin-right': textSideMargin + 'px',
+		// 'margin-left': textSideMargin + 'px'
+	});
+
+
+	// //Make height of the section header
+	// var screenHeight = $(window).height();
+
+	// if (screenWidth < 480){
+	// 	$('#section0').css({
+	// 	    'height': 2*(screenHeight/3.0) + 'px'
+	// 	});
+	// } else {
+	// 	$('#section0').css({
+	// 	    'height': screenHeight/3.0 + 'px'
+	// 	});
+	// }
 
 }
 

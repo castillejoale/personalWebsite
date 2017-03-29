@@ -43,7 +43,7 @@ var projectCalFit = {
   projectSession: "iOS",
   title: "Fitness recommendation app",
   imageSource: "url(images/apps/calFitness.png)",
-  projectText: "Along with professor Aswani and Mo Zhou, a phd student, we are working on an app that recommends workouts using machine learning algorithms.",
+  projectText: "Along with Professor Aswani and Mo Zhou, a PhD student, we are working on an app that recommends workouts using machine learning algorithms.",
   projectTimes: "February '16 - present",
   videoSource: "",
   projectLinks: []
@@ -98,17 +98,6 @@ var projectClock = {
 };
 projects.push(projectClock);
 
-var projectZumy = {
-  id: "zumy",
-  projectSession: "other",
-  title: "ZUMY RESCUE ROBOTS",
-  imageSource: "url(images/projects/project-zumy.png)",
-  projectText: "We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe, check for survivors, and if found signal another Zumy to arrive.",
-  projectTimes: "August '15 - December '15",
-  projectLinks: [{link:"https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be", linktype:"presentation"}]
-};
-projects.push(projectZumy);
-
 var projectInfiniteMirror = {
   id: "infiniteMirror",
   projectSession: "other",
@@ -125,23 +114,34 @@ var projectKa = {
   projectSession: "other",
   title: "NEW TEXTBOOK CONCEPT",
   imageSource: "url(images/projects/project-ka.png)",
-  projectText: "Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia like platform for textbooks that would reduce the cost of textbooks to zero.",
+  projectText: "Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia-like platform for textbooks that would reduce the cost of textbooks to zero.",
   projectTimes: "March '16",
   projectLinks: [{link:"https://docs.google.com/presentation/u/1/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing", linktype:"presentation"}]
 };
 projects.push(projectKa);
 
-
-var projectXamarin = {
-  id: "xamarin",
+var projectZumy = {
+  id: "zumy",
   projectSession: "other",
-  title: "CHURN ANALYSIS",
-  imageSource: "url(images/projects/project-xamarin.png)",
-  projectText: "A group of 5 future industrial engineers for our senior project we have partnered with Xamarin, a Microsoft acquired company, to forecast user churn rate.",
-  projectTimes: "January '16 - May '16",
-  projectLinks: [{link:"https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view", linktype:"pdf"}]
+  title: "ZUMY RESCUE ROBOTS",
+  imageSource: "url(images/projects/project-zumy.png)",
+  projectText: "We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe. A exploring Zumy checks for survivors while another rescues the survivors.",
+  projectTimes: "August '15 - December '15",
+  projectLinks: [{link:"https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be", linktype:"presentation"}]
 };
-projects.push(projectXamarin);
+projects.push(projectZumy);
+
+
+// var projectXamarin = {
+//   id: "xamarin",
+//   projectSession: "other",
+//   title: "CHURN ANALYSIS",
+//   imageSource: "url(images/projects/project-xamarin.png)",
+//   projectText: "A group of 5 future industrial engineers for our senior project we have partnered with Xamarin, a Microsoft acquired company, to forecast user churn rate.",
+//   projectTimes: "January '16 - May '16",
+//   projectLinks: [{link:"https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view", linktype:"pdf"}]
+// };
+// projects.push(projectXamarin);
 
 var projectWeather = {
   id: "weather",
