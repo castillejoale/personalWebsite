@@ -22,13 +22,13 @@ video::-webkit-media-controls {
 }
 /*Custom classes*/
 .dev-overlay {
-  opacity:    0.95; 
-  background: #FFF; 
+  opacity:    0.95;
+  background: #FFF;
   width:      100%;
-  height:     100%; 
+  height:     100%;
   z-index:    10000;
-  top:        0; 
-  left:       0; 
+  top:        0;
+  left:       0;
   position:   fixed;
   text-align: center;
   padding: 20vh 0 0 0;
@@ -156,7 +156,6 @@ video::-webkit-media-controls {
 	cursor: pointer;
 	width: 10%;
 	display: inline-block;
-	font-size: 24px;
 	font-family: 'Roboto Mono', monospace;
 	color: rgba(200,200,200,1);
 }
@@ -189,13 +188,12 @@ video::-webkit-media-controls {
 	/*float:right;*/
 }
 .sectionHalfRight{
-	display: inline-flex; 
+	display: inline-flex;
 	/*float:left;*/
 }
 .sectionTitle {
 	color: rgba(150,150,150,1);
 	font-family: 'Roboto Mono', sans-serif;
-	font-size: 40px;
 	/*font-weight: 500;*/
 	/*letter-spacing: 15px;*/
 	text-align: center;
@@ -284,12 +282,13 @@ video::-webkit-media-controls {
 }
 #sectionHeaderText {
 	position: relative;
+	/*transition: 1s ease-in;*/
 }
 #sectioniOS {
 	margin-bottom: 30vh;
 }
 #sectionOther {
-	
+
 }
 /*Responsiviness*/
 @media(min-width:1001px) {
@@ -308,6 +307,12 @@ video::-webkit-media-controls {
 	.dynamic-timesProject {
 		font-size: 1.7vw;
 	}
+	.navigationBarElement {
+		font-size: 24px;
+	}
+	.sectionTitle {
+		font-size: 40px;
+	}
 }
 @media(max-width:1000px) {
 	.cell {
@@ -325,24 +330,16 @@ video::-webkit-media-controls {
 	.dynamic-timesProject {
 		font-size: 2.7vw;
 	}
+	.navigationBarElement {
+		font-size: 20px;
+	}
+	.sectionTitle {
+		font-size: 20px;
+	}
 }
 @media(max-width:480px) {
 	.cell {
 		width: 100%;
-	}
-	.infoBox {
-		width: 100%;
-		margin-left: 0%;
-	}
-	.sectionHalf {
-		width: 100%;
-	}
-	#face {
-		float:none;
-		margin-right: 0%;
-	}
-	.sectionHalf {
-		height: 50%;
 	}
 	.dynamic-textApp {
 		font-size: 6.0vw;
@@ -355,5 +352,23 @@ video::-webkit-media-controls {
 	}
 	.dynamic-timesProject {
 		font-size: 5.7vw;
+	}
+	.infoBox {
+		width: 100%;
+		margin-left: 0%;
+	}
+	.navigationBarElement {
+		font-size: 14px;
+	}
+	.sectionHalf {
+		height: 50%;
+		width: 100%;
+	}
+	.sectionTitle {
+		font-size: 14px;
+	}
+	#face {
+		float:none;
+		margin-right: 0%;
 	}
 }

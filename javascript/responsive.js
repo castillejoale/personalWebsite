@@ -54,7 +54,7 @@ function responsive()
 
 		var cellHeight = $(this).children().height();
 		var elements = $(this).children().length;
-		
+
 		if (screenWidth < 480){
 			divider = 1;
 		} else if (screenWidth < 1001){
@@ -78,7 +78,7 @@ function responsive()
 	$("#navigationBar").css({
 		'height': navigationBarHeight + 'px'
 	});
-	
+
 	$(".navigationBarElement").css({
 		'height': navigationBarHeight + 'px',
 		'width': navigationBarElementWidth + 'px',
@@ -95,6 +95,10 @@ function responsive()
 	} else {
 		imageHeight = imageWidth * 1/imageRatio;
 	}
+
+	//Add world image now
+	headerImage = $("#headerImage")[0];
+	headerImage.src = 'images/test.png';
 
 	//sectionHeaderText
 	var textHeight = screenHeight - imageHeight - navigationBarHeight
