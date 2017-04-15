@@ -1,7 +1,6 @@
-function navigationBarElementClicked(e)
-{
+function navigationBarElementClicked(e) {
 
-	// console.log($(this).get(0).class()); 
+	// console.log($(this).get(0).class());
 
 	var target = $(e.target);
 
@@ -22,6 +21,5 @@ function navigationBarElementClicked(e)
 	}
 
 }
-
 
 $(".navigationBarElement").click(navigationBarElementClicked);
