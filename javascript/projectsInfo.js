@@ -1,5 +1,17 @@
 var projects = [];
 
+var projectManifesto = {
+  id: "manifesto",
+  projectSession: "iOS",
+  title: "Manifesto",
+  imageSource: "url(images/apps/manifesto.png)",
+  projectText: "I made Manifesto to help me focus on the important rather than the urgent",
+  projectTimes: "April '17",
+  videoSource: "",
+  projectLinks: [{link:"https://itunes.apple.com/us/app/manifesto/id1223839749?mt=8", linktype:"appleStore"}]
+};
+projects.push(projectManifesto);
+
 var projectIXJournal = {
   id: "iXJournal",
   projectSession: "iOS",
