@@ -88,9 +88,10 @@ var projectBoxLock = {
   projectSession: "other",
   title: "BoxLock",
   imageSource: "url(images/projects/project-boxlock2.png)",
-  projectText: "",
+  projectText: "Package thefts at houses is increasing. At propelland we designed and prototyped BoxLock to mitigate this issue.",
   projectTimes: "May '17 - present",
-  projectLinks: [{link:"https://www.getboxlock.com/", linktype:"web"}]
+  projectLinks: [{link:"https://www.getboxlock.com/", linktype:"web"}],
+  tools: "iOS, Raspberry Pi, Django"
 };
 projects.push(projectBoxLock);
 
@@ -99,9 +100,10 @@ var projectPowerade = {
   projectSession: "other",
   title: "POWERADE",
   imageSource: "url(images/projects/project-powerade.jpg)",
-  projectText: "",
+  projectText: "At propelland we are prototyping a Field of Play product that will be available at the FIFA WorldCup Russia 2018.",
   projectTimes: "August '16 - October '17",
-  projectLinks: []
+  projectLinks: [],
+  tools: "iOS, Arduino, AWS"
 };
 projects.push(projectPowerade);
 
@@ -110,10 +112,11 @@ var projectMagLaces = {
   projectSession: "other",
   title: "MagLaces",
   imageSource: "url(images/projects/project-imageNotAvailable.png)",
-  projectText: "",
+  projectText: "With the idea of optimizing my time of a day and after stumbling upon this concept, I redesigned these shoe magnetic laces to make them truly functional.",
   projectTimes: "July '17 - August '17",
   videoSource: "",
-  projectLinks: []
+  projectLinks: [],
+  tools: "Fusion 360"
 };
 projects.push(projectMagLaces);
 
@@ -122,10 +125,11 @@ var projectManifesto = {
   projectSession: "other",
   title: "Manifesto",
   imageSource: "url(images/projects/project-manifesto.png)",
-  projectText: "I made Manifesto to help me focus on the important rather than the urgent",
+  projectText: "To help remind myself about the real important thoughts in life rather than the urgent, I published Manifesto on the App Store.",
   projectTimes: "April '17",
   videoSource: "",
-  projectLinks: [{link:"https://itunes.apple.com/us/app/manifesto/id1223839749?mt=8", linktype:"appleStore"}]
+  projectLinks: [{link:"https://itunes.apple.com/us/app/manifesto/id1223839749?mt=8", linktype:"appleStore"}],
+  tools: "iOS"
 };
 projects.push(projectManifesto);
 
@@ -134,9 +138,10 @@ var projectCocaCola = {
   projectSession: "other",
   title: "COCA-COLA",
   imageSource: "url(images/projects/project-cocacola.jpg)",
-  projectText: "",
+  projectText: "Coca-Cola is one of the biggest propelland clients, for them we have prototyped 3 concepts that are really pushing the internal boundaries of innovation.",
   projectTimes: "August '16 - present",
-  projectLinks: []
+  projectLinks: [],
+  tools: "iOS, Machine Learning, Arduino, Flask"
 };
 projects.push(projectCocaCola);
 
@@ -145,9 +150,10 @@ var projectHyundai = {
   projectSession: "other",
   title: "HYUNDAI",
   imageSource: "url(images/projects/project-hyundai.png)",
-  projectText: "",
+  projectText: "With the wake of electric cars, at propelland I supported on the primary research where we wanted to understand the market forces behind the acquisition of elecric & hybrid cars.",
   projectTimes: "October '16 - November '16",
-  projectLinks: []
+  projectLinks: [],
+  tools: ""
 };
 projects.push(projectHyundai);
 
@@ -158,33 +164,36 @@ var projectKa = {
   imageSource: "url(images/projects/project-khanacademy.jpg)",
   projectText: "Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia-like platform for textbooks that would reduce the cost of textbooks to zero.",
   projectTimes: "March '16",
-  projectLinks: [{link:"https://docs.google.com/presentation/u/1/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing", linktype:"presentation"}]
+  projectLinks: [{link:"https://docs.google.com/presentation/u/1/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing", linktype:"presentation"}],
+  tools: "Illustrator"
 };
 projects.push(projectKa);
-
-var projectARTextbooks = {
-  id: "ARTextbooks",
-  projectSession: "other",
-  title: "Augmented Reality Textbooks",
-  imageSource: "url(images/projects/project-artextbooks2.png)",
-  projectText: "At the Berkeley Virtual Reality Club we are making textbooks more interactive by making conventional 2D figures come to life in 3D through Google Cardboard.",
-  projectTimes: "January '16 - May '16",
-  videoSource: "",
-  projectLinks: [{link:"https://www.youtube.com/watch?v=EcAYZpuYi3w", linktype:"video"}]
-};
-projects.push(projectARTextbooks);
 
 var projectAliviara = {
   id: "aliviara",
   projectSession: "other",
   title: "ALIVIARA SMART GLOVE",
   imageSource: "url(images/projects/project-aliviara.png)",
-  projectText: "In 48 hours we built a smart glove, app, and server prototype that help patients with Rheumatoid Arthritis conduct rehabilitation exercises based on collected data. We won Bekeley's Hack For Humanity 2016.",
+  projectText: "To help patients with Rheumatoid Arthritis conduct rehabilitation exercises, we built a prototype that won Bekeley's Hack For Humanity 2016.",
   projectTimes: "February '16",
   videoSource: "",
-  projectLinks: [{link:"https://docs.google.com/presentation/d/1MyB0A3yDUM2COJymWf7WJjGZthVq2QkIO_HR8Rqxk1k/edit", linktype:"presentation"}]
+  projectLinks: [{link:"https://docs.google.com/presentation/d/1MyB0A3yDUM2COJymWf7WJjGZthVq2QkIO_HR8Rqxk1k/edit", linktype:"presentation"}],
+  tools: "iOS, Arduino, Flask, Machine Learning"
 };
 projects.push(projectAliviara);
+
+var projectARTextbooks = {
+  id: "ARTextbooks",
+  projectSession: "other",
+  title: "Augmented Reality Textbooks",
+  imageSource: "url(images/projects/project-artextbooks2.png)",
+  projectText: "At the Berkeley Virtual Reality Club we made textbooks more interactive by making conventional 2D figures come to life in 3D through AR.",
+  projectTimes: "January '16 - May '16",
+  videoSource: "",
+  projectLinks: [{link:"https://www.youtube.com/watch?v=EcAYZpuYi3w", linktype:"video"}],
+  tools: "iOS, Unity, Google Cardboard"
+};
+projects.push(projectARTextbooks);
 
 var projectZumy = {
   id: "zumy",
@@ -193,7 +202,8 @@ var projectZumy = {
   imageSource: "url(images/projects/project-zumy.png)",
   projectText: "We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe. A exploring Zumy checks for survivors while another rescues the survivors.",
   projectTimes: "August '15 - December '15",
-  projectLinks: [{link:"https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be", linktype:"presentation"}]
+  projectLinks: [{link:"https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be", linktype:"presentation"}],
+  tools: "ROS"
 };
 projects.push(projectZumy);
 

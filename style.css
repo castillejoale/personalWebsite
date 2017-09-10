@@ -98,7 +98,7 @@ video::-webkit-media-controls {
    	font-family: 'Raleway', sans-serif;
 }
 .dynamic-textContainer {
-	height: 85%;
+	height: 60%;
 	width: 100%;
 	position: relative;
 	overflow-y:auto;
@@ -118,6 +118,26 @@ video::-webkit-media-controls {
 	height: 15%;
 	width: 100%;
 	position: relative;
+}
+.dynamic-tools {
+	text-align: center;
+	vertical-align: middle;
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+	position: absolute;
+   	top: 50%;
+   	transform: translate(0, -50%);
+   	overflow:auto;
+   	color: #333333;
+   	font-family: 'Raleway', sans-serif;
+}
+.dynamic-toolsContainer {
+	/*here*/
+	height: 25%;
+	width: 100%;
+	position: relative;
+	overflow-y:auto;
 }
 .grid {
 	box-sizing:border-box;
@@ -308,6 +328,9 @@ video::-webkit-media-controls {
 	.dynamic-timesProject {
 		font-size: 1.7vw;
 	}
+	.dynamic-toolsProject {
+		font-size: 1vw;
+	}
 	.navigationBarElement {
 		font-size: 24px;
 	}
@@ -331,8 +354,11 @@ video::-webkit-media-controls {
 	.dynamic-timesProject {
 		font-size: 2.7vw;
 	}
+	.dynamic-toolsProject {
+		font-size: 1.66vw;
+	}
 	.navigationBarElement {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.sectionTitle {
 		font-size: 20px;
@@ -354,12 +380,15 @@ video::-webkit-media-controls {
 	.dynamic-timesProject {
 		font-size: 5.7vw;
 	}
+	.dynamic-toolsProject {
+		font-size: 3vw;
+	}
 	.infoBox {
 		width: 100%;
 		margin-left: 0%;
 	}
 	.navigationBarElement {
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.sectionHalf {
 		height: 50%;

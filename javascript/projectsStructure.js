@@ -79,6 +79,9 @@ for (i = 0; i < projects.length; i++) {
           divString = divString.concat('<div class="dynamic-textContainer">');
             divString = divString.concat('<div class="dynamic-text dynamic-textProject"></div>');
           divString = divString.concat('</div>');
+          divString = divString.concat('<div class="dynamic-toolsContainer">');
+            divString = divString.concat('<div class="dynamic-tools dynamic-toolsProject"></div>');
+          divString = divString.concat('</div>');
           divString = divString.concat('<div class="dynamic-timesContainer">');
             divString = divString.concat('<div class="dynamic-times dynamic-timesProject"></div>');
           divString = divString.concat('</div>');
@@ -103,6 +106,7 @@ for (i = 0; i < projects.length; i++) {
     div.attr('id', id);
     $('#'.concat(id).concat(' .cellContent')).css( "background-image", projectDict["imageSource"] );
     $('#'.concat(id).concat(' .cellContent .dynamic .dynamic-textContainer .dynamic-text')).text( projectDict["projectText"] );
+    $('#'.concat(id).concat(' .cellContent .dynamic .dynamic-toolsContainer .dynamic-tools')).text( projectDict["tools"] );
     $('#'.concat(id).concat(' .cellContent .dynamic .dynamic-timesContainer .dynamic-times')).text( projectDict["projectTimes"] );
     $('#'.concat(id).concat(' .cellView .projectTitle')).text(projectDict["title"]);
 
