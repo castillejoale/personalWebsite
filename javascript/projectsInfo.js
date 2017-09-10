@@ -100,10 +100,10 @@ var projectPowerade = {
   projectSession: "other",
   title: "POWERADE",
   imageSource: "url(images/projects/project-powerade.jpg)",
-  projectText: "At propelland we are prototyping a Field of Play product that will be available at the FIFA WorldCup Russia 2018.",
+  projectText: "At propelland we designed and prototyped a Field of Play product that will be available at the FIFA WorldCup Russia 2018.",
   projectTimes: "August '16 - October '17",
   projectLinks: [],
-  tools: "iOS, Arduino, AWS"
+  tools: "iOS, Arduino, Django, AWS"
 };
 projects.push(projectPowerade);
 
@@ -153,7 +153,7 @@ var projectHyundai = {
   projectText: "With the wake of electric cars, at propelland I supported on the primary research where we wanted to understand the market forces behind the acquisition of elecric & hybrid cars.",
   projectTimes: "October '16 - November '16",
   projectLinks: [],
-  tools: ""
+  tools: "Primary Research, Insights definition"
 };
 projects.push(projectHyundai);
 
