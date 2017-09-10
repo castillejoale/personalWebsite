@@ -8,68 +8,70 @@ for (i = 0; i < projects.length; i++) {
   var id = projectDict["id"]
   var divString = '';
 
-  if (projectDict["projectSession"] == "iOS") {
+  // if (projectDict["projectSession"] == "iOS") {
+  //
+  //   divString = divString.concat('<div class="cell" id="">');
+  //
+  //     divString = divString.concat('<div class="cellContent cellContentApp">');
+  //
+  //       divString = divString.concat('<video loop preload="none"><source src="" type="video/mp4">Your browser does not support the video tag.</source></video>');
+  //
+  //       divString = divString.concat('<div class="dynamic">');
+  //         divString = divString.concat('<div class="dynamic-textContainer">');
+  //           divString = divString.concat('<div class="dynamic-text dynamic-textApp"></div>');
+  //         divString = divString.concat('</div>');
+  //         divString = divString.concat('<div class="dynamic-timesContainer">');
+  //           divString = divString.concat('<div class="dynamic-times dynamic-timesApp"></div>');
+  //         divString = divString.concat('</div>');
+  //       divString = divString.concat('</div>');
+  //
+  //     divString = divString.concat('</div>');
+  //
+  //     divString = divString.concat('<div class="cellView">');
+  //
+  //       divString = divString.concat('<div class="projectTitle"></div>');
+  //
+  //       divString = divString.concat('<div class="list" id="listProject">');
+  //
+  //       for(var j = 0; j < projectDict["projectLinks"].length; j++){
+  //         divString = divString.concat('<a target="_blank" href="">');
+  //           divString = divString.concat('<div class="listElement listElementProject" id=""></div>');
+  //         divString = divString.concat('</a>');
+  //       }
+  //
+  //         divString = divString.concat('<div class="listElement listElementProject text" id=""></div>');
+  //
+  //       divString = divString.concat('</div>');
+  //
+  //     divString = divString.concat('</div>');
+  //
+  //   divString = divString.concat('</div>');
+  //
+  //   var div = $(divString);
+  //   $(".app").append(div);
+  //
+  //
+  //   div.first().attr('id', id);
+  //   $('#'.concat(id).concat(' .cellContent')).css( "background-image", projectDict["imageSource"] );
+  //   $('#'.concat(id).concat(' .cellContentApp video source')).attr('src', projectDict["videoSource"]);
+  //   $('#'.concat(id).concat(' .cellView .projectTitle')).text(projectDict["title"]);
+  //
+  //   $('#'.concat(id).concat(' .cellContent .dynamic .dynamic-textContainer .dynamic-text')).text( projectDict["projectText"] );
+  //   $('#'.concat(id).concat(' .cellContent .dynamic .dynamic-timesContainer .dynamic-times')).text( projectDict["projectTimes"] );
+  //
+  //   for(var j = 0; j < projectDict["projectLinks"].length; j++){
+  //
+  //     var element = $('#'.concat(id).concat(' .cellView #listProject .listElement')).eq(j);
+  //     var classes = element.attr('class');
+  //     element.attr('class', classes.concat(" ".concat(projectDict["projectLinks"][j]["linktype"])));
+  //
+  //     $('#'.concat(id).concat(' .cellView #listProject')).children().eq(j).attr('href', projectDict["projectLinks"][j]["link"]);
+  //
+  //   }
+  //
+  // } else
 
-    divString = divString.concat('<div class="cell" id="">');
-
-      divString = divString.concat('<div class="cellContent cellContentApp">');
-
-        divString = divString.concat('<video loop preload="none"><source src="" type="video/mp4">Your browser does not support the video tag.</source></video>');
-
-        divString = divString.concat('<div class="dynamic">');
-          divString = divString.concat('<div class="dynamic-textContainer">');
-            divString = divString.concat('<div class="dynamic-text dynamic-textApp"></div>');
-          divString = divString.concat('</div>');
-          divString = divString.concat('<div class="dynamic-timesContainer">');
-            divString = divString.concat('<div class="dynamic-times dynamic-timesApp"></div>');
-          divString = divString.concat('</div>');
-        divString = divString.concat('</div>');
-
-      divString = divString.concat('</div>');
-
-      divString = divString.concat('<div class="cellView">');
-
-        divString = divString.concat('<div class="projectTitle"></div>');
-
-        divString = divString.concat('<div class="list" id="listProject">');
-
-        for(var j = 0; j < projectDict["projectLinks"].length; j++){
-          divString = divString.concat('<a target="_blank" href="">');
-            divString = divString.concat('<div class="listElement listElementProject" id=""></div>');
-          divString = divString.concat('</a>');
-        }
-
-          divString = divString.concat('<div class="listElement listElementProject text" id=""></div>');
-
-        divString = divString.concat('</div>');
-
-      divString = divString.concat('</div>');
-
-    divString = divString.concat('</div>');
-
-    var div = $(divString);
-    $(".app").append(div);
-
-
-    div.first().attr('id', id);
-    $('#'.concat(id).concat(' .cellContent')).css( "background-image", projectDict["imageSource"] );
-    $('#'.concat(id).concat(' .cellContentApp video source')).attr('src', projectDict["videoSource"]);
-    $('#'.concat(id).concat(' .cellView .projectTitle')).text(projectDict["title"]);
-
-    $('#'.concat(id).concat(' .cellContent .dynamic .dynamic-textContainer .dynamic-text')).text( projectDict["projectText"] );
-    $('#'.concat(id).concat(' .cellContent .dynamic .dynamic-timesContainer .dynamic-times')).text( projectDict["projectTimes"] );
-
-    for(var j = 0; j < projectDict["projectLinks"].length; j++){
-
-      var element = $('#'.concat(id).concat(' .cellView #listProject .listElement')).eq(j);
-      var classes = element.attr('class');
-      element.attr('class', classes.concat(" ".concat(projectDict["projectLinks"][j]["linktype"])));
-
-      $('#'.concat(id).concat(' .cellView #listProject')).children().eq(j).attr('href', projectDict["projectLinks"][j]["link"]);
-
-    }
-
-  } else if (projectDict["projectSession"] == "other") {
+  if (projectDict["projectSession"] == "other") {
 
     divString = divString.concat('<div class="cell" id="">');
       divString = divString.concat('<div class="cellContent cellContentProject">');
