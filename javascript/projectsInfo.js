@@ -88,7 +88,7 @@ var projectBoxLock = {
   projectSession: "other",
   title: "BoxLock",
   imageSource: "url(images/projects/project-boxlock2.png)",
-  projectText: "Package thefts at houses is increasing. At propelland we designed and prototyped BoxLock to mitigate this issue.",
+  projectText: "Packages thefts at houses are increasing. At propelland we designed and prototyped BoxLock to mitigate this issue.",
   projectTimes: "May '17 - present",
   projectLinks: [{link:"https://www.getboxlock.com/", linktype:"web"}],
   tools: "iOS, Raspberry Pi, Django"
@@ -112,7 +112,7 @@ var projectMagLaces = {
   projectSession: "other",
   title: "MagLaces",
   imageSource: "url(images/projects/project-imageNotAvailable.png)",
-  projectText: "With the idea of optimizing my time of a day and after stumbling upon this concept, I redesigned these shoe magnetic laces to make them truly functional.",
+  projectText: "With the exaggerated idea of hiper optimizing my time and after stumbling upon this concept, I redesigned these shoe magnetic laces to never tie my shoes again.",
   projectTimes: "July '17 - August '17",
   videoSource: "",
   projectLinks: [],
@@ -138,7 +138,7 @@ var projectCocaCola = {
   projectSession: "other",
   title: "COCA-COLA",
   imageSource: "url(images/projects/project-cocacola.jpg)",
-  projectText: "Coca-Cola is one of the biggest propelland clients, for them we have prototyped 3 concepts that are really pushing the internal boundaries of innovation.",
+  projectText: "Coca-Cola is one of the biggest propelland clients, for them we have prototyped 3 concepts that are really pushing the company internal boundaries of innovation.",
   projectTimes: "August '16 - present",
   projectLinks: [],
   tools: "iOS, Machine Learning, Arduino, Flask"
@@ -150,7 +150,7 @@ var projectHyundai = {
   projectSession: "other",
   title: "HYUNDAI",
   imageSource: "url(images/projects/project-hyundai.png)",
-  projectText: "With the wake of electric cars, at propelland I supported on the primary research where we wanted to understand the market forces behind the acquisition of elecric & hybrid cars.",
+  projectText: "With the wake of electric cars, at propelland I supported on the primary research part of this project, where we wanted to understand the market forces behind the acquisition of elecric & hybrid cars.",
   projectTimes: "October '16 - November '16",
   projectLinks: [],
   tools: "Primary Research, Insights definition"
@@ -162,7 +162,7 @@ var projectKa = {
   projectSession: "other",
   title: "NEW TEXTBOOK CONCEPT",
   imageSource: "url(images/projects/project-khanacademy.jpg)",
-  projectText: "Education is the root solution to todays major challenges. I proposed to Khan Academy to create a wikipedia-like platform for textbooks that would reduce the cost of textbooks to zero.",
+  projectText: "Education is the root solution to todays major challenges. To reduce educational costs, I proposed to Khan Academy to create a wikipedia-like platform for the creation of textbooks.",
   projectTimes: "March '16",
   projectLinks: [{link:"https://docs.google.com/presentation/u/1/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing", linktype:"presentation"}],
   tools: "Illustrator"
@@ -200,7 +200,7 @@ var projectZumy = {
   projectSession: "other",
   title: "ZUMY RESCUE ROBOTS",
   imageSource: "url(images/projects/project-zumy.png)",
-  projectText: "We simulated a system where our Zumy Robots autonomously navigate a field with buildings and obstacles after a catastrophe. A exploring Zumy checks for survivors while another rescues the survivors.",
+  projectText: "To mitigate the impact of a catastrophe, we simulated a system where our Zumy Robots autonomously navigate a field with ruined buildings in order to look for survivors.",
   projectTimes: "August '15 - December '15",
   projectLinks: [{link:"https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be", linktype:"presentation"}],
   tools: "ROS"
