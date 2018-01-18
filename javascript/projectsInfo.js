@@ -1,4 +1,187 @@
+//Future projects to add:
+
+//Cosentino
+//Austrian lotto
+//Cocacola: PBS (coasters and bottles), AR, SmartDispenser, NFC, Sparkling?
+//Pernod Ricard. Smart home bar, lightCube
+//Powerade smart bottle, command center
+//Internal: propeller lights, propeller app, clock, foosball, smartMirror, bathroomlight, clouds.
+//BNP: Homie
+//Techcrunch disrupt hackathon
+//Writelab
+
 var projects = [];
+
+var projectBoxLock = {
+  id: "boxlock",
+  projectSession: "other",
+  title: "BoxLock",
+  imageSource: "url(images/projects/project-boxlock2.png)",
+  projectText: "Packages thefts at houses are increasing. At propelland we designed and prototyped BoxLock to mitigate this issue.",
+  projectTimes: "May '17 - present",
+  projectLinks: [{link:"https://www.getboxlock.com/", linktype:"web"}, {link:"https://www.kickstarter.com/projects/196013167/boxlock-home-smart-padlock-for-protecting-deliveri?ref=discovery", linktype:"kickstarter"}, {link:"https://www.youtube.com/watch?v=E5Nw8s7nz0k", linktype:"video"}, {link:"https://www.facebook.com/NowThisFuture/videos/1826432007397971/", linktype:"video"}],
+  tools: "iOS, Raspberry Pi, Django"
+};
+projects.push(projectBoxLock);
+
+var projectCanovas = {
+  id: "canovas",
+  projectSession: "other",
+  title: "Canovas Fundacion",
+  imageSource: "url(images/projects/project-canovas.jpg)",
+  projectText: "",
+  projectTimes: "June '17",
+  projectLinks: [{link:"https://issuu.com/canovasfundacion/docs/revista_canovas_n__19_junio_2017", linktype:"press"}],
+  tools: ""
+};
+projects.push(projectCanovas);
+
+var projectPowerade = {
+  id: "powerade",
+  projectSession: "other",
+  title: "POWERADE",
+  imageSource: "url(images/projects/project-powerade.jpg)",
+  projectText: "At propelland we designed and prototyped a Field of Play product that will be available at the FIFA WorldCup Russia 2018.",
+  projectTimes: "August '16 - October '17",
+  projectLinks: [],
+  tools: "iOS, Arduino, Django, AWS"
+};
+projects.push(projectPowerade);
+
+var projectMagLaces = {
+  id: "maglaces",
+  projectSession: "other",
+  title: "MagLaces",
+  imageSource: "url(images/projects/project-maglaces.png)",
+  projectText: "With the exaggerated idea of hiper optimizing my time and after stumbling upon this concept, I redesigned these shoe magnetic laces to never tie my shoes again.",
+  projectTimes: "July '17 - August '17",
+  videoSource: "",
+  projectLinks: [],
+  tools: "Fusion 360, Keyshot"
+};
+projects.push(projectMagLaces);
+
+var projectManifesto = {
+  id: "manifesto",
+  projectSession: "other",
+  title: "Manifesto",
+  imageSource: "url(images/projects/project-manifesto.png)",
+  projectText: "To help remind myself about the real important thoughts in life rather than the urgent, I published Manifesto on the App Store.",
+  projectTimes: "April '17",
+  videoSource: "",
+  projectLinks: [{link:"https://itunes.apple.com/us/app/manifesto/id1223839749?mt=8", linktype:"appleStore"}],
+  tools: "iOS"
+};
+projects.push(projectManifesto);
+
+var projectCocaCola = {
+  id: "cocacola",
+  projectSession: "other",
+  title: "COCA-COLA",
+  imageSource: "url(images/projects/project-cocacola.jpg)",
+  projectText: "Coca-Cola is one of the biggest propelland clients, for them we have prototyped 3 concepts that are really pushing the company internal boundaries of innovation.",
+  projectTimes: "August '16 - present",
+  projectLinks: [],
+  tools: "iOS, Machine Learning, Arduino, Flask"
+};
+projects.push(projectCocaCola);
+
+var projectHyundai = {
+  id: "hyundai",
+  projectSession: "other",
+  title: "HYUNDAI",
+  imageSource: "url(images/projects/project-hyundai.png)",
+  projectText: "With the wake of electric cars, at propelland I supported on the primary research part of this project, where we wanted to understand the market forces behind the acquisition of elecric & hybrid cars.",
+  projectTimes: "October '16 - November '16",
+  projectLinks: [{link:"http://www.red-dot.sg/en/ev-life-tool/", linktype:"award"}, {link:"https://www.hyundai.com/worldwide/en/brand-story/project-ioniq/meet-ioniq-main", linktype:"web"}],
+  tools: "Primary Research, Insights definition"
+};
+projects.push(projectHyundai);
+
+var projectKa = {
+  id: "ka",
+  projectSession: "other",
+  title: "NEW TEXTBOOK CONCEPT",
+  imageSource: "url(images/projects/project-khanacademy.jpg)",
+  projectText: "Education is the root solution to todays major challenges. To reduce educational costs, I proposed to Khan Academy to create a wikipedia-like platform for the creation of textbooks.",
+  projectTimes: "March '16",
+  projectLinks: [{link:"https://docs.google.com/presentation/u/1/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing", linktype:"presentation"}],
+  tools: "Illustrator"
+};
+projects.push(projectKa);
+
+var projectAliviara = {
+  id: "aliviara",
+  projectSession: "other",
+  title: "ALIVIARA SMART GLOVE",
+  imageSource: "url(images/projects/project-aliviara.png)",
+  projectText: "To help patients with Rheumatoid Arthritis conduct rehabilitation exercises, we built a prototype that won Bekeley's Hack For Humanity 2016.",
+  projectTimes: "February '16",
+  videoSource: "",
+  projectLinks: [{link:"https://docs.google.com/presentation/d/1MyB0A3yDUM2COJymWf7WJjGZthVq2QkIO_HR8Rqxk1k/edit", linktype:"presentation"}],
+  tools: "iOS, Arduino, Flask, Machine Learning"
+};
+projects.push(projectAliviara);
+
+var projectARTextbooks = {
+  id: "ARTextbooks",
+  projectSession: "other",
+  title: "Augmented Reality Textbooks",
+  imageSource: "url(images/projects/project-artextbooks2.png)",
+  projectText: "At the Berkeley Virtual Reality Club we made textbooks more interactive by making conventional 2D figures come to life in 3D through AR.",
+  projectTimes: "January '16 - May '16",
+  videoSource: "",
+  projectLinks: [{link:"https://www.facebook.com/vratberkeley/videos/641313029361814/", linktype:"video"}, {link:"https://www.youtube.com/watch?v=EcAYZpuYi3w", linktype:"video"}],
+  tools: "iOS, Unity, Google Cardboard"
+};
+projects.push(projectARTextbooks);
+
+var projectZumy = {
+  id: "zumy",
+  projectSession: "other",
+  title: "ZUMY RESCUE ROBOTS",
+  imageSource: "url(images/projects/project-zumy.png)",
+  projectText: "To mitigate the impact of a catastrophe, we simulated a system where our Zumy Robots autonomously navigate a field with ruined buildings in order to look for survivors.",
+  projectTimes: "August '15 - December '15",
+  projectLinks: [{link:"https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be", linktype:"presentation"}],
+  tools: "ROS"
+};
+projects.push(projectZumy);
+
+var projectBNP = {
+  id: "bnp",
+  projectSession: "other",
+  title: "BNP Paribas",
+  imageSource: "url(images/projects/project-bnp.png)",
+  projectText: "To contribute to the evolution of the smart home insurance we prototyped 2 ideas throughout a 3 day workshop",
+  projectTimes: "June '14",
+  projectLinks: [],
+  tools: "Ideation, Illustrator, InVision"
+};
+projects.push(projectBNP);
+
+// var projectXamarin = {
+//   id: "xamarin",
+//   projectSession: "other",
+//   title: "CHURN ANALYSIS",
+//   imageSource: "url(images/projects/project-xamarin.png)",
+//   projectText: "A group of 5 future industrial engineers for our senior project we have partnered with Xamarin, a Microsoft acquired company, to forecast user churn rate.",
+//   projectTimes: "January '16 - May '16",
+//   projectLinks: [{link:"https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view", linktype:"pdf"}]
+// };
+// projects.push(projectXamarin);
+
+// var projectWeather = {
+//   id: "weather",
+//   projectSession: "iOS",
+//   title: "Wear based on weather",
+//   imageSource: "url(images/apps/weather.png)",
+//   projectText: "This is the first app I made in my life",
+//   projectTimes: "May '14",
+//   videoSource: "",
+//   projectLinks: []
+// };
+// projects.push(projectWeather);
 
 // var projectIXJournal = {
 //   id: "iXJournal",
@@ -82,150 +265,3 @@ var projects = [];
 //   projectLinks: [{link:"https://www.instagram.com/p/4AxpG8tjr_/", linktype:"instagram"}]
 // };
 // projects.push(projectInfiniteMirror);
-
-var projectBoxLock = {
-  id: "boxlock",
-  projectSession: "other",
-  title: "BoxLock",
-  imageSource: "url(images/projects/project-boxlock2.png)",
-  projectText: "Packages thefts at houses are increasing. At propelland we designed and prototyped BoxLock to mitigate this issue.",
-  projectTimes: "May '17 - present",
-  projectLinks: [{link:"https://www.getboxlock.com/", linktype:"web"}],
-  tools: "iOS, Raspberry Pi, Django"
-};
-projects.push(projectBoxLock);
-
-var projectPowerade = {
-  id: "powerade",
-  projectSession: "other",
-  title: "POWERADE",
-  imageSource: "url(images/projects/project-powerade.jpg)",
-  projectText: "At propelland we designed and prototyped a Field of Play product that will be available at the FIFA WorldCup Russia 2018.",
-  projectTimes: "August '16 - October '17",
-  projectLinks: [],
-  tools: "iOS, Arduino, Django, AWS"
-};
-projects.push(projectPowerade);
-
-var projectMagLaces = {
-  id: "maglaces",
-  projectSession: "other",
-  title: "MagLaces",
-  imageSource: "url(images/projects/project-imageNotAvailable.png)",
-  projectText: "With the exaggerated idea of hiper optimizing my time and after stumbling upon this concept, I redesigned these shoe magnetic laces to never tie my shoes again.",
-  projectTimes: "July '17 - August '17",
-  videoSource: "",
-  projectLinks: [],
-  tools: "Fusion 360"
-};
-projects.push(projectMagLaces);
-
-var projectManifesto = {
-  id: "manifesto",
-  projectSession: "other",
-  title: "Manifesto",
-  imageSource: "url(images/projects/project-manifesto.png)",
-  projectText: "To help remind myself about the real important thoughts in life rather than the urgent, I published Manifesto on the App Store.",
-  projectTimes: "April '17",
-  videoSource: "",
-  projectLinks: [{link:"https://itunes.apple.com/us/app/manifesto/id1223839749?mt=8", linktype:"appleStore"}],
-  tools: "iOS"
-};
-projects.push(projectManifesto);
-
-var projectCocaCola = {
-  id: "cocacola",
-  projectSession: "other",
-  title: "COCA-COLA",
-  imageSource: "url(images/projects/project-cocacola.jpg)",
-  projectText: "Coca-Cola is one of the biggest propelland clients, for them we have prototyped 3 concepts that are really pushing the company internal boundaries of innovation.",
-  projectTimes: "August '16 - present",
-  projectLinks: [],
-  tools: "iOS, Machine Learning, Arduino, Flask"
-};
-projects.push(projectCocaCola);
-
-var projectHyundai = {
-  id: "hyundai",
-  projectSession: "other",
-  title: "HYUNDAI",
-  imageSource: "url(images/projects/project-hyundai.png)",
-  projectText: "With the wake of electric cars, at propelland I supported on the primary research part of this project, where we wanted to understand the market forces behind the acquisition of elecric & hybrid cars.",
-  projectTimes: "October '16 - November '16",
-  projectLinks: [],
-  tools: "Primary Research, Insights definition"
-};
-projects.push(projectHyundai);
-
-var projectKa = {
-  id: "ka",
-  projectSession: "other",
-  title: "NEW TEXTBOOK CONCEPT",
-  imageSource: "url(images/projects/project-khanacademy.jpg)",
-  projectText: "Education is the root solution to todays major challenges. To reduce educational costs, I proposed to Khan Academy to create a wikipedia-like platform for the creation of textbooks.",
-  projectTimes: "March '16",
-  projectLinks: [{link:"https://docs.google.com/presentation/u/1/d/1wc829MPxy3WpouvfiPxrWt_6Gz1kgrX_Q_hgXaQBeAU/edit?usp=sharing", linktype:"presentation"}],
-  tools: "Illustrator"
-};
-projects.push(projectKa);
-
-var projectAliviara = {
-  id: "aliviara",
-  projectSession: "other",
-  title: "ALIVIARA SMART GLOVE",
-  imageSource: "url(images/projects/project-aliviara.png)",
-  projectText: "To help patients with Rheumatoid Arthritis conduct rehabilitation exercises, we built a prototype that won Bekeley's Hack For Humanity 2016.",
-  projectTimes: "February '16",
-  videoSource: "",
-  projectLinks: [{link:"https://docs.google.com/presentation/d/1MyB0A3yDUM2COJymWf7WJjGZthVq2QkIO_HR8Rqxk1k/edit", linktype:"presentation"}],
-  tools: "iOS, Arduino, Flask, Machine Learning"
-};
-projects.push(projectAliviara);
-
-var projectARTextbooks = {
-  id: "ARTextbooks",
-  projectSession: "other",
-  title: "Augmented Reality Textbooks",
-  imageSource: "url(images/projects/project-artextbooks2.png)",
-  projectText: "At the Berkeley Virtual Reality Club we made textbooks more interactive by making conventional 2D figures come to life in 3D through AR.",
-  projectTimes: "January '16 - May '16",
-  videoSource: "",
-  projectLinks: [{link:"https://www.youtube.com/watch?v=EcAYZpuYi3w", linktype:"video"}],
-  tools: "iOS, Unity, Google Cardboard"
-};
-projects.push(projectARTextbooks);
-
-var projectZumy = {
-  id: "zumy",
-  projectSession: "other",
-  title: "ZUMY RESCUE ROBOTS",
-  imageSource: "url(images/projects/project-zumy.png)",
-  projectText: "To mitigate the impact of a catastrophe, we simulated a system where our Zumy Robots autonomously navigate a field with ruined buildings in order to look for survivors.",
-  projectTimes: "August '15 - December '15",
-  projectLinks: [{link:"https://www.youtube.com/watch?v=wWe99oHV6BY&feature=youtu.be", linktype:"presentation"}],
-  tools: "ROS"
-};
-projects.push(projectZumy);
-
-// var projectXamarin = {
-//   id: "xamarin",
-//   projectSession: "other",
-//   title: "CHURN ANALYSIS",
-//   imageSource: "url(images/projects/project-xamarin.png)",
-//   projectText: "A group of 5 future industrial engineers for our senior project we have partnered with Xamarin, a Microsoft acquired company, to forecast user churn rate.",
-//   projectTimes: "January '16 - May '16",
-//   projectLinks: [{link:"https://drive.google.com/file/d/0B3judopZrAtOMFREVDIwOHlZZnc/view", linktype:"pdf"}]
-// };
-// projects.push(projectXamarin);
-
-// var projectWeather = {
-//   id: "weather",
-//   projectSession: "iOS",
-//   title: "Wear based on weather",
-//   imageSource: "url(images/apps/weather.png)",
-//   projectText: "This is the first app I made in my life",
-//   projectTimes: "May '14",
-//   videoSource: "",
-//   projectLinks: []
-// };
-// projects.push(projectWeather);

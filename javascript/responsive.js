@@ -85,23 +85,74 @@ function responsive()
 		'line-height': navigationBarHeight + 'px'
 	});
 
+	// //World image
+	// var imageHeight = Math.floor(screenHeight*0.33);
+	// var imageWidth = screenWidth*0.80;
+	// var imageContainerRatio = imageWidth/imageHeight;
+	// var imageRatio = 2400 / 804;
+	// if (imageContainerRatio > imageRatio) {
+	// 	imageWidth = imageHeight * imageRatio;
+	// } else {
+	// 	imageHeight = imageWidth * 1/imageRatio;
+	// }
+	//
+	// //Add world image now
+	// headerImage = $("#headerImage")[0];
+	// headerImage.src = 'images/test.png';
+
+
+
+
+	// //World image
+	// // var imageHeight = Math.floor(screenHeight*0.33);
+	// var imageWidth = screenWidth*0.80;
+	// // var imageContainerRatio = imageWidth/imageHeight;
+	// var imageRatio = 2400 / 2400;
+	// // if (imageContainerRatio > imageRatio) {
+	// // 	imageWidth = imageHeight * imageRatio;
+	// // } else {
+	// var	imageHeight = imageWidth * 1/imageRatio;
+	// // }
+	//
+	// //Add world image now
+	// headerImage = $("#headerImage")[0];
+	// headerImage.src = 'images/test2.png';
+
+	//sectionHeaderText
+	// var textHeight = screenHeight - imageHeight - navigationBarHeight
+	var textHeight = Math.floor(screenHeight*0.60);
+
+
 	//World image
-	var imageHeight = Math.floor(screenHeight*0.33);
 	var imageWidth = screenWidth*0.80;
+	var imageHeight = 2*Math.floor(screenHeight*0.30);
 	var imageContainerRatio = imageWidth/imageHeight;
-	var imageRatio = 2400 / 804;
+	var imageRatio = 2400 / 2400;
 	if (imageContainerRatio > imageRatio) {
 		imageWidth = imageHeight * imageRatio;
 	} else {
 		imageHeight = imageWidth * 1/imageRatio;
+		textHeight = screenHeight - imageHeight/2 - navigationBarHeight
 	}
 
 	//Add world image now
 	headerImage = $("#headerImage")[0];
-	headerImage.src = 'images/test.png';
+	headerImage.src = 'images/test2.png';
 
-	//sectionHeaderText
-	var textHeight = screenHeight - imageHeight - navigationBarHeight
+
+
+	console.log("screenHeight");
+	console.log(screenHeight);
+	console.log("screenWidth");
+	console.log(screenWidth);
+	console.log("imageWidth");
+	console.log(imageWidth);
+	console.log("imageHeight");
+	console.log(imageHeight);
+	console.log("navigationBarHeight");
+	console.log(navigationBarHeight);
+	console.log("textHeight");
+	console.log(textHeight);
 
 
 	$("#headerImageContainer").css({
@@ -122,9 +173,13 @@ function responsive()
 	var textTopMargin = Math.min(screenHeight * 0.15, screenWidth * 0.15);
 	var textSideMargin = textTopMargin;
 
-	var textHeight = screenHeight - imageHeight - textTopMargin - navigationBarHeight;
+	// var textHeight = screenHeight - imageHeight - textTopMargin - navigationBarHeight;
 	var textWidth = screenWidth - textSideMargin;
-	var textFontSize = ((textHeight * textWidth) / 17000.0) + 2.7*(1000/textWidth);
+	// var textFontSize = ((textHeight * textWidth) / 20000.0) + (2000/textWidth);
+	var textFontSize = 25 - (1000/textWidth);
+
+	console.log("textFontSize");
+	console.log(textFontSize);
 
 	$(".text-1").css({
 		// 'height': textHeight + 'px',
