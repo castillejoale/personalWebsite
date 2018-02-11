@@ -24,17 +24,17 @@ var projectBoxLock = {
 };
 projects.push(projectBoxLock);
 
-var projectCanovas = {
-  id: "canovas",
-  projectSession: "other",
-  title: "Canovas Fundacion",
-  imageSource: "url(images/projects/project-canovas.jpg)",
-  projectText: "",
-  projectTimes: "June '17",
-  projectLinks: [{link:"https://issuu.com/canovasfundacion/docs/revista_canovas_n__19_junio_2017", linktype:"press"}],
-  tools: ""
-};
-projects.push(projectCanovas);
+// var projectCanovas = {
+//   id: "canovas",
+//   projectSession: "other",
+//   title: "Canovas Fundacion",
+//   imageSource: "url(images/projects/project-canovas.jpg)",
+//   projectText: "",
+//   projectTimes: "June '17",
+//   projectLinks: [{link:"https://issuu.com/canovasfundacion/docs/revista_canovas_n__19_junio_2017", linktype:"press"}],
+//   tools: ""
+// };
+// projects.push(projectCanovas);
 
 var projectPowerade = {
   id: "powerade",
@@ -69,7 +69,7 @@ var projectManifesto = {
   projectText: "To help remind myself about the real important thoughts in life rather than the urgent, I published Manifesto on the App Store.",
   projectTimes: "April '17",
   videoSource: "",
-  projectLinks: [{link:"https://itunes.apple.com/us/app/manifesto/id1223839749?mt=8", linktype:"appleStore"}],
+  projectLinks: [{link:"https://itunes.apple.com/us/app/manifesto/id1223839749?mt=8", linktype:"appleStore"}, {link:"https://medium.com/@castillejoale/manifesto-a-compass-to-navigate-life-cfbe92649453", linktype:"medium"}],
   tools: "iOS"
 };
 projects.push(projectManifesto);
@@ -147,18 +147,18 @@ var projectZumy = {
   tools: "ROS"
 };
 projects.push(projectZumy);
-
-var projectBNP = {
-  id: "bnp",
-  projectSession: "other",
-  title: "BNP Paribas",
-  imageSource: "url(images/projects/project-bnp.png)",
-  projectText: "To contribute to the evolution of the smart home insurance we prototyped 2 ideas throughout a 3 day workshop",
-  projectTimes: "June '14",
-  projectLinks: [],
-  tools: "Ideation, Illustrator, InVision"
-};
-projects.push(projectBNP);
+//
+// var projectBNP = {
+//   id: "bnp",
+//   projectSession: "other",
+//   title: "BNP Paribas",
+//   imageSource: "url(images/projects/project-bnp.png)",
+//   projectText: "To contribute to the evolution of the smart home insurance we prototyped 2 ideas throughout a 3 day workshop",
+//   projectTimes: "June '14",
+//   projectLinks: [],
+//   tools: "Ideation, Illustrator, InVision"
+// };
+// projects.push(projectBNP);
 
 // var projectXamarin = {
 //   id: "xamarin",

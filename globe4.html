@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+  <div id="canvas-container">
+  </div>
+</body>
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+
+// console.log($(window).width());
+
+var width = $(window).width() / 2,
+    height = $(window).height() / 2;
+
+var radius = height / 2 - 5,
+    scale = radius,
+    velocity = .005;
+
+var projection = d3.geoOrthographic()
+    .translate([width / 2, height / 2])
+    .scale(scale)
+    .clipAngle(90);
+
+var canvas = d3.select("#canvas-container").append("canvas").attr("width", width).attr("height", height);
+
+var context = canvas.node().getContext("2d");
+
+var path = d3.geoPath().projection(projection).context(context);
+
+
+d3.json("world-110m.json", function(error, world) {
+  if (error) throw error;
+
+  var land = topojson.feature(world, world.objects.land);
+
+  d3.timer(function(elapsed) {
+
+		context.clearRect(0, 0, width, height);
+
+		//Draw outter circle and fill it
+		context.beginPath();
+		context.arc(width / 2, height / 2, radius, 0, 2 * Math.PI, true);
+		context.lineWidth = 2.5;
+		// context.strokeStyle = '#132447';
+		// context.stroke();
+		context.fillStyle = '#035395';
+		context.fill();
+
+		//Draw countries
+    projection.rotate([velocity * elapsed, 0]);
+		context.fillStyle =  '#02A384';
+    context.beginPath();
+    path(land);
+		// console.log(land);
+    context.fill();
+
+
+  });
+});
+
+// d3.select(self.frameElement).style("height", height + "px");
+
+// var aspect = width / height;
+// var chart = d3.select(self.frameElement);
+// d3.select(window).on("resize", function() {
+//     var targetWidth = chart.node().getBoundingClientRect().width;
+//     chart.attr("width", targetWidth);
+//     chart.attr("height", targetWidth / aspect);
+//   });
+
+d3.select(window).on("resize", function() {
+
+  resize();
+
+});
+
+resize();
+
+function resize() {
+
+  var minimum = Math.min($(window).width() - 5, $(window).height() / 2);
+
+  width = minimum;
+  height = minimum;
+  radius = height / 2 - 5;
+  scale = radius;
+
+  canvas.attr("width", width).attr("height", height);
+
+  projection.translate([width / 2, height / 2]).scale(scale).clipAngle(90);
+
+}
+
+</script>
